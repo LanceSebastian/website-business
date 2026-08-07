@@ -570,8 +570,22 @@ body:not(.dark) .toggle:hover {
     display: block;
 }
 
-.caret-bar {
+.header-buttons{
+    display: flex;
+    margin-top: var(--space-xl);
+    gap: var(--space-md);
+}
 
+.header-buttons > * {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header-buttons > *:hover {
+    color: var(--primary);
+}
+
+.caret-bar {
     word-wrap: break-word;
     min-width: 100px;
     line-height: 1;
