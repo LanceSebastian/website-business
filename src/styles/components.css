@@ -553,11 +553,6 @@ body:not(.dark) .toggle:hover {
     object-fit: cover;
 }
 
-
-.subheader {
-    font-size: clamp(1.4rem, 4vw, 3rem);
-}
-
 @media (max-width: 900px) {
     nav .ctaButton {
         display: none;
@@ -580,7 +575,7 @@ body:not(.dark) .toggle:hover {
     word-wrap: break-word;
     min-width: 100px;
     line-height: 1;
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(1.5rem, 4vw, 2rem);
 }
 
 .caret {
