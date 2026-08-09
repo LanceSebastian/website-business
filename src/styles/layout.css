@@ -19,6 +19,12 @@
     outline: red solid;
 }
 
+.outline-all > * {
+    outline: red solid;
+}
+
+
+
 
 /*sizes*/
 .belt {
@@ -67,7 +73,7 @@
 }
 
 .hero-thumbnail {
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .squeeze {
@@ -143,10 +149,6 @@
     padding-right: 16px ;
 }
 
-.pad-w-32 {
-    padding:0px 32px ;
-}
-
 .pad-w-64 {
     padding:0px 32px ;
 }
@@ -188,15 +190,14 @@
     padding: 128px;
 }
 
-.dentRight {
-    margin-right: 128px;
+.m-w-xl {
+    margin-left: var(--space-xl);
+    margin-right: var(--space-xl);
 }
 
-.dentLeft {
-    margin-left: 128px;
-}  
-.dentBoth {
-    margin: 64px 64px;
+.m-w-2xl {
+    margin-left: var(--space-2xl);
+    margin-right: var(--space-2xl);
 }
 
 .autoMargin{
@@ -236,7 +237,7 @@
 }
 
 .project:hover > .grow-s {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .row:hover td {
