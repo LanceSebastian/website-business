@@ -8,6 +8,12 @@
     scroll-margin-top: 100px;
 }
 
+#home {
+    @media (max-width: 900px) {
+        margin-top: 32px;
+    }
+}
+
 @keyframes blurIn {
     from {
         opacity: 0;
@@ -590,6 +596,7 @@ body:not(.dark) .toggle:hover {
 
 .header-buttons {
     display: flex;
+    justify-content: center;
     margin-top: var(--space-xl);
     gap: var(--space-md);
 }
@@ -633,7 +640,6 @@ body:not(.dark) .toggle:hover {
 
 .navBar {
     display: flex;
-    padding: 8px 32px;
     width: 100%;
     justify-content: end;
     align-items: center;
@@ -968,11 +974,6 @@ body:not(.dark) .processStep:hover {
     margin: 0;
 }
 
-.testimonialText.hero{
-    font-size: 1rem;
-    text-align:center;
-}
-
 .testimonialAuthor {
     display: flex;
     flex-direction: row;
@@ -993,6 +994,8 @@ body:not(.dark) .processStep:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: var(--space-md);
     max-width: 600px;
     gap: var(--space-md);
 }

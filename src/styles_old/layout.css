@@ -73,6 +73,7 @@
 }
 
 .hero-thumbnail {
+    width: 100%;
     max-width: 600px;
 }
 
@@ -195,9 +196,14 @@
     margin-right: var(--space-xl);
 }
 
+.m-w-l {
+    margin-left: var(--space-l);
+    margin-right: var(--space-l);
+}
+
 .m-w-2xl {
-    margin-left: var(--space-2xl);
-    margin-right: var(--space-2xl);
+    margin-left: var(--space-l);
+    margin-right: var(--space-l);
 }
 
 .autoMargin{
@@ -310,4 +316,12 @@
 
 .align-start {
     align-items: start;
+}
+
+.grid-flow{
+    grid-auto-flow: column;
+}
+
+.flex-row-gap-sm {
+    column-gap: var(--space-sm);
 }

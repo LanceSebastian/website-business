@@ -1,0 +1,52 @@
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+
+
+
+.large {
+  font-size: 1.25rem;
+}
+
+.x-large {
+  font-size: 1.5rem;
+}
+
+.i-24 {
+  font-size: 24px;
+}
+
+.i-48 {
+  font-size: 48px;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 0px;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.eyebrow-hero {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.center-text {
+    text-align: center;
+}

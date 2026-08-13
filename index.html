@@ -79,7 +79,7 @@
                 
                 <input type="checkbox" id="check" aria-label="Toggle mobile menu">
 
-                <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
+                <ul id="myTopnav" class="links">
                     <li class="navItem selected" data-link="home"><a href="/">Home</a></li>
                     <li class="navItem menu-item">
                         <a href="/about">About <i class="fa-solid fa-angle-down"></i></a>
@@ -109,19 +109,8 @@
         <main>
             <section class="vh-100 max-h-1250 headerContainer" id="home">
                 
-                <div id="header" class="fullscreen pile col-2 m-w-2xl">
-                    <!-- <picture>
-                        <source type="image/avif" srcset="./src/images/hero.avif">
-                        <source type="image/webp" srcset="./src/images/hero.webp">
-                        <img 
-                        class = "banner" 
-                        src="./src/images/hero.JPG" 
-                        alt = "Hero Image"
-                        decoding="async"
-                        fetchpriority="high"
-                        >
-                    </picture> -->
-                    <div>
+                <div id="header" class="fullscreen pile col-2 flex-row-gap-sm grid-flow m-w-l">
+                    <div class="center-text">
                         <span class="eyebrow-hero">Hi, We're Owl Vision.</span>
                         <h1><span class="lancify" style="display: block;">Website Designs</span> For Small Businesses.</h1>
                         <p class="caret-bar">
