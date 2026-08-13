@@ -1,17 +1,18 @@
 
-@import "./styles_old/global.css";
+@import "./styles/base/reset.css";
+@import "./styles/base/typography.css";
+@import "./styles/base/layout.css";
 
-/* base elements */
-@import "./styles_old/base.css";
+@import "./styles/components/button.css";
+@import "./styles/components/faq.css";
+@import "./styles/components/form.css";
+@import "./styles/components/feature-card.css";
+@import "./styles/components/pricing-card.css";
+@import "./styles/components/project-card.css";
+@import "./styles/components/testimonial-card.css";
 
-/* page classes */
-@import "./styles_old/pages.css";
+@import "./styles/layout/footer.css";
+@import "./styles/layout/header.css";
+@import "./styles/layout/navbar.css";
 
-/* components classes */
-@import "./styles_old/components.css";
-
-/* layout */
-@import "./styles_old/layout.css";
-
-/* typography */
-@import "./styles_old/typography.css"
+@import "./styles/pages/home.css";
