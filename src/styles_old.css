@@ -1,0 +1,17 @@
+
+@import "./styles_old/global.css";
+
+/* base elements */
+@import "./styles_old/base.css";
+
+/* page classes */
+@import "./styles_old/pages.css";
+
+/* components classes */
+@import "./styles_old/components.css";
+
+/* layout */
+@import "./styles_old/layout.css";
+
+/* typography */
+@import "./styles_old/typography.css"
