@@ -74,7 +74,7 @@
                 <!-- Company Logo -->
                 <div>
                     <a href="/" aria-label="Home">
-                        <img class="pfp" src="./src/images/logo-wide2.svg" alt="Lance Sebastian">
+                        <img class="nav__logo" src="./src/images/logo-wide2.svg" alt="Lance Sebastian">
                     </a>
                 </div>
 
@@ -84,55 +84,64 @@
                 <!-- Navigation -->
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
-                    <li>
+                    <li class="dropdown-parent">
                         <a href="/about">About <i class="fa-solid fa-angle-down"></i></a>
                         <ul class="dropdown">
-                            <li><a href="/about">Owl Vision</a></li>
-                            <li><a href="/projects">Projects</a></li>
-                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/about" aria-label="About Owl Vision">Owl Vision</a></li>
+                            <li><a href="/projects" aria-label="View Projects">Projects</a></li>
+                            <li><a href="/faq" aria-label="Frequently Asked Questions">FAQ</a></li>
                         </ul>
                     </li>
 
                     <li><a href="/pricing">Pricing</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/contact">Get Started</a></li>
+                    <li><a href="/contact" aria-label="Contact Us">Contact</a></li>
+                    <li><a href="/contact" aria-label="Get Started">Get Started</a></li>
                 </ul>
                 
                 <!-- Dark Mode Toggle -->
-                <button id="darkModeToggle" class="darkmode-toggle" aria-label="Toggle dark mode">
+                <button id="darkModeToggle" class="darkmode-toggle" aria-label="Toggle Dark Mode">
                     <i class="fa-regular fa-moon"></i>
                     <i class="fa-regular fa-sun"></i>
                 </button>
 
                 <!-- Burger Button for Mobile-->
-                <label for="check" class="burger-button" aria-label="Open navigation menu">
+                <label for="check" class="burger-button" aria-label="Open Navigation Menu">
                     <i class="fa fa-bars"></i>
                 </label>
             </div>
         </nav>
+        
+        <div class="hero">
+            <div class="button"></div>
+        </div>
+
+        <div class="button"></div>
 
         <main>
-            <section class="vh-100 max-h-1250 headerContainer" id="home">
-                
-                <div id="header" class="fullscreen pile col-2 flex-row-gap-sm grid-flow m-w-l">
-                    <div class="center-text">
-                        <span class="eyebrow-hero">Hi, We're Owl Vision.</span>
-                        <h1><span class="lancify" style="display: block;">Website Designs</span> For Small Businesses.</h1>
+            <section class="hero-container" id="home">
+                <div id="header" class="hero-content">
+                    
+                    <div class="hero__title">
+                        <span class="hero-eyebrow">Hi, We're Owl Vision.</span>
+                        <h1><span class="highlight">Website Designs</span> For Small Businesses.</h1>
                         <p class="caret-bar">
-                            <span id ="typewrite"></span><span class="caret">&nbsp;</span>
+                            <span id ="typewrite"></span>
+                            <span class="caret">&nbsp;</span>
                         </p>
                         
-                        <div class="header-buttons">
-                            <a class="" href="#contactMe">- Get Started</a>
-                            <a class="" href="#projects">- View Projects</a>
+                        <div class="hero__buttons">
+                            <a href="#contactMe" aria-label="Get Started">- Get Started</a>
+                            <a href="#projects" aria-label="View Projects">- View Projects</a>
                         </div>
                     </div>
-                    <div class="hero-testimonial-container">
-                        <a class="grow-s" href="https://bosface.com" aria-label="Visit BoSface Website">
+
+                    <div class="hero__display">
+
+                        <a href="https://bosface.com" aria-label="Visit BoSface Website">
                             <picture>
                                 <source type="image/webp" srcset="/src/images/bosface.webp">
                                 <img
-                                class="hero-thumbnail"
+                                class="hero__display-image"
                                 src="/src/images/bosface.png"
                                 alt="BoSface Project"
                                 loading="lazy"
@@ -140,13 +149,14 @@
                                 >
                             </picture>
                         </a>
-                        <div class="hero-testimonial">
-                            <div style="display: flex; width:100%; justify-content: space-between;">
-                                <div class="testimonialAuthor flex-down">
-                                    <span class="testimonialName">Melinda</span>
-                                    <span class="testimonialBusiness muted">Owner, BoSface</span>
+
+                        <div class="hero__display-testimonial">
+                            <div class="testimonial__header">
+                                <div class="testimonial__author">
+                                    <span class="testimonial__name">Melinda</span>
+                                    <span class="testimonial__business muted">Owner, BoSface</span>
                                 </div>
-                                <div class="testimonialStars">
+                                <div class="testimonial__stars">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -154,7 +164,8 @@
                                     <i class="fa-solid fa-star"></i>
                                 </div>
                             </div>
-                            <p class="testimonialText">
+
+                            <p class="testimonial__text">
                                 I had a great experience working with Lance. He was accommodating with every request, 
                                 clearly explained the pros and cons of each option, and never pressured me into decisions. 
                                 The service offers excellent value for money while delivering high-quality work.
@@ -162,9 +173,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="center" style="position: absolute; bottom: 16px; width: 100%;">
+                <div class="hero__scroll-indicator">
                     <p>Scroll Down</p>
-                    <i class="i-24 fa-solid fa-angle-down"></i>
+                    <i class="fa-solid fa-angle-down"></i>
                 </div>
             </section>   
             
