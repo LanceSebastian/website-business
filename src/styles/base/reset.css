@@ -1,0 +1,41 @@
+/* 1. Box-sizing everywhere — makes width/height math predictable */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin browsers add to nearly everything */
+* {
+  margin: 0;
+}
+
+/* 3. Body: sane line-height, font smoothing */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Media elements behave like blocks and don't overflow their container */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Form elements inherit fonts instead of using browser default UI font */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Prevent long words/URLs from breaking layout */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Remove default list styling — you'll opt back in where you want bullets */
+ul, ol {
+  list-style: none;
+}
+
+/* 8. Make sure root elements fill the viewport height reliably */
+html, body {
+  height: 100%;
+}
