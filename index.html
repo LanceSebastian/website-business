@@ -189,22 +189,22 @@
                         From design to deployment, we handle everything. A professional website without the headache.
                     </p>
                 </div>
-                <div class="wid-services">
-                    <template id="wid__servicesTemplate">
-                        <div class="wid__service">
-                            <i class="wid__service-icon"></i>
-                            <div class = "wid__service-content">
+                <div class="wid__services">
+                    <template id="wid__services-template">
+                        <div class="wid__services-item">
+                            <i class="wid__services-item-icon"></i>
+                            <div class = "wid__services-item-content">
                                 <h3></h3>
                                 <p></p>
                             </div>
                         </div>
                     </template>
-                    <div id="services" class="wid-services__container"></div>
+                    <div id="services" class="wid__services-container"></div>
                 </div>
             </section>
 
             <!-- Our Offer -->
-            <section id="our-offer" class="our-offerflex-container flex-row">
+            <section id="our-offer" class="our-offer flex-container flex-row">
 
                 <!-- Owner Image -->
                 <picture>
@@ -364,36 +364,33 @@
             </section>
 
             <!-- Testimonials -->
-            <section id="testimonials">
-                <div class="autoMargin pad-h-32 pad-w-16 center squeeze">
-                    <div class="center">
-                        <span class="eyebrow">Testimonials</span>
-                        <h2>What Clients Say</h2>
-                    </div>
-                    <template id="testimonialTemplate">
-                        <div class="testimonialCard">
-                            <i class="fa-solid fa-quote-left testimonialQuote"></i>
-                            <p class="testimonialText"></p>
-                            <div class="testimonialAuthor">
-                                <div style="display:flex; flex-direction: column;">
-                                    <span class="testimonialName"></span>
-                                    <span class="testimonialBusiness muted"></span>
-                                </div>
-                                <div class="testimonialStars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+            <section id="testimonials" class="testimonials">
+                <div class="testimonials__header">
+                    <span class="eyebrow">Testimonials</span>
+                    <h2>What Clients Say</h2>
+                </div>
+
+                <template id="testimonials-template">
+                    <div class="testimonials__item">
+                        <i class="fa-solid fa-quote-left testimonialQuote"></i>
+                        <p class="testimonialText"></p>
+                        <div class="testimonialAuthor">
+                            <div style="display:flex; flex-direction: column;">
+                                <span class="testimonialName"></span>
+                                <span class="testimonialBusiness muted"></span>
+                            </div>
+                            <div class="testimonialStars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </template>
-                    <div class="testimonialsContainer">
-                        <div id="testimonials-list" style="display: contents;"></div>
-                        <div class="testimonialCard testimonialGhost"></div>
                     </div>
-                </div>
+                </template>
+
+                <div id="testimonials-list" class="testimonials__container"></div>
             </section>
 
             <!-- Testimonials -->
