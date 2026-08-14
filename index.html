@@ -118,7 +118,7 @@
         <div class="button"></div>
 
         <main>
-            <section class="hero-container" id="home">
+            <section id="home" class="hero-container">
                 <div id="header" class="hero-content">
                     
                     <div class="hero__title">
@@ -180,110 +180,104 @@
             </section>   
             
             <!-- What I can do for you -->
-            <section id="wid">
-                <div class="autoMargin center pad-w-16 pad-h-32">
-                    <div class="titlebox pad-w-16">
-                        <span class="eyebrow">What We do</span>
-                        <h2>Web Design for Small Businesses</h2>
+            <section id="wid" class="wid">
+                <div class="wid__header">
+                    <span class="eyebrow">What We do</span>
+                    <h2>Web Design for Small Businesses</h2>
 
-                        <div class="textbox p-8">
-                            <p class="muted">
-                                From design to deployment, we handle everything. A professional website without the headache.
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <template id="servicesTemplate">
-                            <div class="service">
-                                <i class="lancify i-48 fa-solid"></i>
-                                <div class = "process">
-                                    <h3 class="small-h3"></h3>
-                                    <p class="muted"></p>
-                                </div>
+                    <p class="textbox">
+                        From design to deployment, we handle everything. A professional website without the headache.
+                    </p>
+                </div>
+                <div class="wid-services">
+                    <template id="wid__servicesTemplate">
+                        <div class="wid__service">
+                            <i class="wid__service-icon"></i>
+                            <div class = "wid__service-content">
+                                <h3></h3>
+                                <p></p>
                             </div>
-                        </template>
-                        <div id="services" class="servicesContainer"></div>
-                    </div>
+                        </div>
+                    </template>
+                    <div id="services" class="wid-services__container"></div>
                 </div>
             </section>
 
-            <!-- What I offer -->
-            <section id="offering">
-                <div class="mediaContent pad-w-16 pad-h-32">
-                    <picture>
-                        <source type="image/avif" srcset="./src/images/pfp.avif">
-                        <source type="image/webp" srcset="./src/images/pfp.webp">
-                        <img
-                        class="echo media"
-                        src="./src/images/pfp.jpeg"
-                        alt="My Profile"
-                        width="400"
-                        height="500"
-                        loading="lazy"
-                        decoding="async"
-                        >
-                    </picture>
-                    <div class="box">
-                        <div class="titlebox start pad-w-16">
-                            <span class="eyebrow">What We Offer</span>
-                            <h2>Websites starting at £0 <br/>down and £50 a month</h2>
+            <!-- Our Offer -->
+            <section id="our-offer" class="our-offerflex-container flex-row">
 
-                            <div class="textbox start pad-h-8">
-                                <p class="muted">
-                                    We offer a £0 down for a standard 5 page small business website, with hosting and maintenance starting at £50 a month. 
-                                    No hidden fees, no surprise costs. If you need more than that, we can discuss custom pricing based on your specific needs. 
-                                    <b>6 month minimum contract</b>. Includes design, development, hosting, unlimited edits, 24/7 support, and lifetime updates.
-                                </p>
-                            </div>
+                <!-- Owner Image -->
+                <picture>
+                    <source type="image/avif" srcset="./src/images/pfp.avif">
+                    <source type="image/webp" srcset="./src/images/pfp.webp">
+                    <img
+                    class="our-offer__image"
+                    src="./src/images/pfp.jpeg"
+                    alt="My Profile"
+                    width="400"
+                    height="500"
+                    loading="lazy"
+                    decoding="async"
+                    >
+                </picture>
+                
+                <!-- Offer Content -->
+                <div class="our-offer__content">
+                    <span class="eyebrow">What We Offer</span>
+                    <h2>Websites starting at £0 <br/>down and £50 a month</h2>
+                    <p>
+                        We offer a £0 down for a standard 5 page small business website, with hosting and maintenance starting at £50 a month. 
+                        No hidden fees, no surprise costs. If you need more than that, we can discuss custom pricing based on your specific needs. 
+                        <b>6 month minimum contract</b>. Includes design, development, hosting, unlimited edits, 24/7 support, and lifetime updates.
+                    </p>
 
-                            <ul class="offer-features pad-h-16">
-                                <li>
-                                    <h3>✓ 100% Secure</h3>
-                                    <p class="muted">Your website is protected with the latest security measures.</p>
-                                </li>
-                                <li>
-                                    <h3>✓ Custom Design</h3>
-                                    <p class="muted">Each website is uniquely designed to reflect your brand.</p>
-                                </li>
-                                <li>
-                                    <h3>✓ 100 PageSpeed Score</h3>
-                                    <p class="muted">Your website loads quickly and efficiently.</p>
-                                </li>
-                                <li>
-                                    <h3>✓ Unmatched Support</h3>
-                                    <p class="muted">You'll have direct access to my contact at all times.</p>
-                                </li>
-                            </ul>
-                            <div class="buttons pad-h-8">
-                                <a class="ctaButton" href="/contact">Schedule a Call</a>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="our-offer__features">
+                        <li>
+                            <h3>✓ 100% Secure</h3>
+                            <p>Your website is protected with the latest security measures.</p>
+                        </li>
+                        <li>
+                            <h3>✓ Custom Design</h3>
+                            <p>Each website is uniquely designed to reflect your brand.</p>
+                        </li>
+                        <li>
+                            <h3>✓ 100 PageSpeed Score</h3>
+                            <p>Your website loads quickly and efficiently.</p>
+                        </li>
+                        <li>
+                            <h3>✓ Unmatched Support</h3>
+                            <p>You'll have direct access to my contact at all times.</p>
+                        </li>
+                    </ul>
+                    
+                    <a class="cta-button" href="/contact">Schedule a Call</a>
                 </div>
             </section>
     
             
             <!-- Projects Section -->
-            <section id="projects" class="col-2 align-center pad-w-16 pad-h-32 gap-16">
-                <div class="titlebox">
+            <section id="projects" class="projects">
+
+                <!-- Project Header -->
+                <div class="projects__header">
                     <span class="eyebrow">Portfolio</span>
                     <h2>Our Recent Work</h2>
-                    
-                    <div class="textbox p-8">
-                        <p class="muted">
-                            Hand-built websites, no templates. Here's a sample of what we've designed and delivered for clients and personal projects.
-                        </p>
-                    </div>
-    
-                    <a class="bigButton" href="/Projects">View All Projects</a>
+                    <p>
+                        Hand-built websites, no templates. Here's a sample of what we've designed and delivered for clients and personal projects.
+                    </p>
+                    <a class="cta-button" href="/Projects">View All Projects</a>
                 </div>
-                <div class="projectContainer">
-                    <div class="project">
-                        <a class="grow-s" href="https://bosface.com" aria-label="Visit BoSface Website">
+
+                <!-- Projects Content-->
+                <div class="projects__content">
+
+                    <!-- BoSFace -->
+                    <div class="projects__item">
+                        <a href="https://bosface.com" aria-label="Visit BoSface Website">
                             <picture>
                                 <source type="image/webp" srcset="/src/images/bosface.webp">
                                 <img
-                                class="thumbnail"
+                                class="projects__thumbnail"
                                 src="/src/images/bosface.png"
                                 alt="BoSface Project"
                                 loading="lazy"
@@ -291,37 +285,39 @@
                                 >
                             </picture>
                         </a>
-                        <div>
+                        <div class="projects__item-content">
                             <h3>BoSface</h3>
-                            <p class="muted">
+                            <p>
                                 Designed and Built for a client, BoSface is an up-and-coming local beauty and wellness studio
                                 specialising in personalised facial and massage treatments.
                             </p>
-                            <a class="bigButton" href="https://bosface.com" aria-label="Visit BoSface Website">Visit Website</a>
+                            <a class="cta-button" href="https://bosface.com" aria-label="Visit BoSface Website">Visit Website</a>
                         </div>
                     </div>
-                    <div class="project">
-                    <a class="grow-s" href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">
-                        <picture>
-                            <source type="image/webp" srcset="/src/images/ladasritongbai.webp">
-                            <img
-                            class="thumbnail"
-                            src="/src/images/ladasritongbai.png"
-                            alt="Lada Sritongbai Project"
-                            loading="lazy"
-                            decoding="async"
-                            >
-                        </picture>
-                    </a>
-                    <div>
-                        <h3>Lada Sritongbai</h3>
-                        <p class="muted">
-                            Lada is a narrative illustrator specialising in character design and storytelling. 
-                            We designed and built a custom portfolio to reflect her unique artistic style and showcase her work effectively. 
-                        </p>
-                        <a class="bigButton" href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">Visit Website</a>
+
+                    <!-- Lada Sritongbai -->
+                    <div class="projects__item">
+                        <a href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">
+                            <picture>
+                                <source type="image/webp" srcset="/src/images/ladasritongbai.webp">
+                                <img
+                                class="projects__thumbnail"
+                                src="/src/images/ladasritongbai.png"
+                                alt="Lada Sritongbai Project"
+                                loading="lazy"
+                                decoding="async"
+                                >
+                            </picture>
+                        </a>
+                        <div class="projects__item-content">
+                            <h3>Lada Sritongbai</h3>
+                            <p>
+                                Lada is a narrative illustrator specialising in character design and storytelling. 
+                                We designed and built a custom portfolio to reflect her unique artistic style and showcase her work effectively. 
+                            </p>
+                            <a class="cta-button" href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">Visit Website</a>
+                        </div>
                     </div>
-                </div>
                 </div>
             </section>
 
