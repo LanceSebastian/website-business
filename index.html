@@ -322,60 +322,44 @@
             </section>
 
             <!-- Performance -->
-            <section id="performance">
-                <div class="mediaContent reverse pad-w-16 pad-h-32">
-                    <div class="image-wrapper pad-w-16">
-                        <picture>
-                            <source type="image/avif" srcset="./src/images/performance.avif">
-                            <source type="image/webp" srcset="./src/images/performance.webp">
-                            <img
-                            class="media macbook"
-                            src="./src/images/performance.jpg"
-                            alt="My Profile"
-                            width="720"
-                            height="450"
-                            loading="lazy"
-                            decoding="async"
-                            >
-                        </picture>
+            <section id="performance" class="performance flex-container flex-row">
+                <picture>
+                    <source type="image/avif" srcset="./src/images/performance.avif">
+                    <source type="image/webp" srcset="./src/images/performance.webp">
+                    <img
+                    class="performance__image"
+                    src="./src/images/performance.jpg"
+                    alt="My Profile"
+                    width="720"
+                    height="450"
+                    loading="lazy"
+                    decoding="async"
+                    >
+                </picture>
+                <div class="performance__content">
+                    <span class="eyebrow">Performance</span>
+                    <h2>Superior Performance. Better Websites.</h2>
+                    <p>
+                        When it comes to website load times, not very many can get the Google PageSpeed scores that we get with each and every site. 
+                        Test your website load times with Google PageSpeed Insights and see what your current site is scoring right now.
+                    </p>
+                    
+                    <div class="performance__feature">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>Fast load times means more traffic and more conversions over time.</p>
                     </div>
-                    <div class="box">
-                        <div class="titlebox start pad-w-16">
-                            <span class="eyebrow">Performance</span>
-                            <h2>Superior Performance. Better Websites.</h2>
 
-                            <div class="textbox start pad-h-8">
-                                <p class="muted">
-                                    When it comes to website load times, not very many can get the Google PageSpeed scores that we get with each and every site. 
-                                    Test your website load times with Google PageSpeed Insights and see what your current site is scoring right now.
-                                </p>
-                            </div>
-
-                            <div class="detailContainer">
-                                <div class="icon"><i class="fa-solid fa-truck-fast"></i></div>
-                                <div class="detail start">
-                                    <p class="small-h3">Fast load times means more traffic and more conversions over time.</p>
-                                </div>
-                            </div>
-
-                            <div class="detailContainer">
-                                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                                <div class="detail start">
-                                    <p class="small-h3">Higher performance scores lead to better search engine rankings.</p>
-                                </div>
-                            </div>
-
-                            <div class="detailContainer">
-                                <div class="icon"><i class="fa-solid fa-stopwatch"></i></div>
-                                <div class="detail start">
-                                    <p class="small-h3">Our sites are guaranteed to meet the highest performance standards.</p>
-                                </div>
-                            </div>
-                            <div class="buttons pad-h-8">
-                                <a class="ctaButton" href="/contact">Schedule a Call</a>
-                            </div>
-                        </div>
+                    <div class="performance__feature">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <p>Higher performance scores lead to better search engine rankings.</p>
                     </div>
+
+                    <div class="performance__feature">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <p>Our sites are guaranteed to meet the highest performance standards.</p>
+                    </div>
+
+                    <a class="cta-button" href="/contact">Schedule a Call</a>
                 </div>
             </section>
 
