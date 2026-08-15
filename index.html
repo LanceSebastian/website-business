@@ -71,42 +71,42 @@
     <body>
         <nav class="nav">
             <!-- Company Logo -->
-            <div>
-                <a href="/" aria-label="Home">
-                    <img class="nav__logo" src="./src/images/logo-wide2.svg" alt="Lance Sebastian">
-                </a>
-            </div>
-
-            <!-- Burger button -->
-            <input type="checkbox" id="check" aria-label="Toggle mobile menu">
-
-            <!-- Navigation -->
-            <ul class="nav__links">
-                <li><a href="/">Home</a></li>
-                <li class="dropdown-parent">
-                    <a href="/about">About <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="dropdown">
-                        <li><a href="/about" aria-label="About Owl Vision">Owl Vision</a></li>
-                        <li><a href="/projects" aria-label="View Projects">Projects</a></li>
-                        <li><a href="/faq" aria-label="Frequently Asked Questions">FAQ</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact" aria-label="Contact Us">Contact</a></li>
-                <li><a href="/contact" aria-label="Get Started">Get Started</a></li>
-            </ul>
+            <a class="nav__header" href="/" aria-label="Home">
+                Owl Vision
+            </a>
             
-            <!-- Dark Mode Toggle -->
-            <button id="darkModeToggle" class="darkmode-toggle" aria-label="Toggle Dark Mode">
-                <i class="fa-regular fa-moon"></i>
-                <i class="fa-regular fa-sun"></i>
-            </button>
-
-            <!-- Burger Button for Mobile-->
-            <label for="check" class="burger-button" aria-label="Open Navigation Menu">
-                <i class="fa fa-bars"></i>
-            </label>
+            <div class="nav__content">
+                <!-- Burger button Check-->
+                <input type="checkbox" id="check" aria-label="Toggle mobile menu">
+    
+                <!-- Navigation -->
+                <ul class="nav__links">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown-parent">
+                        <a href="/about">About <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="/about" aria-label="About Owl Vision">Owl Vision</a></li>
+                            <li><a href="/projects" aria-label="View Projects">Projects</a></li>
+                            <li><a href="/faq" aria-label="Frequently Asked Questions">FAQ</a></li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/contact" aria-label="Contact Us">Contact</a></li>
+                    <li><a href="/contact" aria-label="Get Started">Get Started</a></li>
+                </ul>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="darkmode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+    
+                <!-- Burger Button -->
+                <label for="check" class="burger-button" aria-label="Open Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
         </nav>
 
         <main>
