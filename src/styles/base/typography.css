@@ -43,6 +43,10 @@ body {
   margin-bottom: 4px;
 }
 
+.highlight{
+  color: var(--primary);
+}
+
 .bold {
     font-weight: 600;
 }
