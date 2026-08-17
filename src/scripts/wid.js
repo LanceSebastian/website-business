@@ -1,25 +1,52 @@
 const content = [
   {
-    icon: "fa-paintbrush",
-    title: "Custom Websites",
-    text: `Hand-coded from scratch, tailored to your brand. 
-    A unique site for your business and customers.`
+    icon: "fa-mobile-screen",
+    title: "Hands-free Websites",
+    text: `Your time is valuable. That's why we handle all 
+    development and maintenance matters for you, so you can 
+    focus on what you do best: running your business.`
   },
   {
     icon: "fa-mobile-screen",
-    title: "Fully Responsive",
-    text: `Your website will be fully responsive, ensuring 
-    a seamless experience on any device for all your visitors.`
+    title: "Tailored to your Vision",
+    text: `Coded from scratch, tailored to your brand. We 
+    collaborate closely during the design phase to understand 
+    your goals and bring your unique vision to life.`
   },
   {
-    icon: "fa-magnifying-glass",
+    icon: "fa-mobile-screen",
+    title: "Unlimited Edits",
+    text: `Businesses need to move fast to stay ahead of 
+    changing trends and demands. After launch, we offer 
+    unlimited edits — image changes, content rewrites, or 
+    information updates — to keep your website up to speed.`
+  },
+  {
+    icon: "fa-mobile-screen",
     title: "SEO Integrated",
-    text: `Optimized for search engines. Fast performance 
-    and clear navigation to attract more visitors.`
+    text: `Websites aren't just for humans. We stay up to date 
+    with ever-changing SEO strategies, including AI-friendly 
+    techniques, to give you the best chance of attracting 
+    more visitors.`
+  },
+  {
+    icon: "fa-mobile-screen",
+    title: "Global Support",
+    text: `Owl Vision is based in the UK, but the internet has 
+    no borders. We're always happy and able to help, whether 
+    you're a neighbour or in a neighbouring country.`
+  },
+  {
+    icon: "fa-mobile-screen",
+    title: "Mobile-First Design",
+    text: `63% of internet use comes from mobile phones. Owl 
+    Vision follows a mobile-first design philosophy to ensure 
+    your visitors get the best possible first impression, no 
+    matter what platform they browse with.`
   },
 ];
 
-const servicesTemplate = document.getElementById("servicesTemplate");
+const servicesTemplate = document.getElementById("wid__services-template");
 const services = document.getElementById("services");
 
 content.forEach(step => {
