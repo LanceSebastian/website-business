@@ -1,0 +1,19 @@
+- styles
+    - projects
+    - performance
+    - testimonials
+    - pricing
+    - contact
+    - footer
+
+- pages
+    - home
+    - faq
+    - contact
+    - about
+    - projects
+    - 
+
+- Desktop Version 
+
+- Prune dead classes
