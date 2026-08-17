@@ -14,14 +14,15 @@
 
 .wid__services-item{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
 .wid__services-item-icon{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    font-size: var(--space-md);
 }
 
 .wid__services-item-content{
