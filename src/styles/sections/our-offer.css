@@ -1,0 +1,19 @@
+.our-offer{
+    display: flex;
+    flex-direction: column-reverse ;
+    padding: var(--space-md);
+}
+
+.our-offer__content{
+
+}
+
+.our-offer__header{
+    
+}
+
+.our-offer__features{
+    padding:0;
+    margin:0;
+}
+
