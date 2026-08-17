@@ -1,0 +1,33 @@
+.cta-button {
+    --characters:0;
+
+    position: relative;
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.2s;
+
+    &:hover{
+        color: var(--primary);
+        font-weight: 500;
+    }
+
+    &::after{
+        content: "-";
+        position: absolute;
+        transition: all 0.2s;
+        left:-10%;
+    }
+
+    &:hover::after{
+        content: "-";
+        position: absolute;
+        transform: translateX(var(--characters));
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        inset: -15px;
+
+    }
+}
