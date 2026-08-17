@@ -13,22 +13,19 @@
 }
 
 .wid__services-item{
-    display: flex;
-    justify-content: start;
-    align-items: center;
 }
 
 .wid__services-item-icon{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    font-size: var(--space-md);
+    font-size: var(--space-lg);
 }
 
-.wid__services-item-content{
-
+.wid__services-item-header{
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
 }
 
 .wid__services-container{
-
+    
 }
