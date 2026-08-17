@@ -1,20 +1,23 @@
 const content = [
   {
-    icon: "fa-mobile-screen",
+    // Hands
+    icon: "fa-handshake",
     title: "Hands-free Websites",
     text: `Your time is valuable. That's why we handle all 
     development and maintenance matters for you, so you can 
     focus on what you do best: running your business.`
   },
   {
-    icon: "fa-mobile-screen",
+    // Design / business
+    icon: "fa-paintbrush",
     title: "Tailored to your Vision",
     text: `Coded from scratch, tailored to your brand. We 
     collaborate closely during the design phase to understand 
     your goals and bring your unique vision to life.`
   },
   {
-    icon: "fa-mobile-screen",
+    // Infinite / Design
+    icon: "fa-infinity",
     title: "Unlimited Edits",
     text: `Businesses need to move fast to stay ahead of 
     changing trends and demands. After launch, we offer 
@@ -22,7 +25,8 @@ const content = [
     information updates — to keep your website up to speed.`
   },
   {
-    icon: "fa-mobile-screen",
+    // search
+    icon: "fa-magnifying-glass",
     title: "SEO Integrated",
     text: `Websites aren't just for humans. We stay up to date 
     with ever-changing SEO strategies, including AI-friendly 
@@ -30,13 +34,15 @@ const content = [
     more visitors.`
   },
   {
-    icon: "fa-mobile-screen",
+    // world
+    icon: "fa-earth-americas",
     title: "Global Support",
     text: `Owl Vision is based in the UK, but the internet has 
     no borders. We're always happy and able to help, whether 
     you're a neighbour or in a neighbouring country.`
   },
   {
+    // phone
     icon: "fa-mobile-screen",
     title: "Mobile-First Design",
     text: `63% of internet use comes from mobile phones. Owl 
