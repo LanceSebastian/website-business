@@ -17,3 +17,10 @@
     margin:0;
 }
 
+.our-offer__image{
+    aspect-ratio: 4/3;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 32px;
+}
+
