@@ -47,6 +47,10 @@ body {
   color: var(--primary);
 }
 
+.block {
+  display: block;
+}
+
 .bold {
     font-weight: 600;
 }
