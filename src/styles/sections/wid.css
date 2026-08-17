@@ -1,0 +1,33 @@
+.wid{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+}
+
+.wid__header{
+
+}
+
+.wid__services{
+
+}
+
+.wid__services-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wid__services-item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wid__services-item-content{
+
+}
+
+.wid__services-container{
+
+}
