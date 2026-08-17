@@ -6,6 +6,7 @@
 /* 2. Remove default margin browsers add to nearly everything */
 * {
   margin: 0;
+  color: var(--text);
 }
 
 /* 3. Body: sane line-height, font smoothing */
