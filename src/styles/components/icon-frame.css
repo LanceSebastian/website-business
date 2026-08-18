@@ -1,0 +1,10 @@
+.icon-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    font-size: var(--space-lg);
+    border: var(--text) solid 2px;
+    border-radius: 100%;
+    padding: var(--space-sm);
+}
