@@ -11,10 +11,6 @@
     gap: var(--space-md);
 }
 
-.contact__header{
-
-}
-
 .contact__info{
     display: flex;
     align-items: center;
@@ -26,7 +22,7 @@
 }
 
 .contact__info-text{
-
+    
 }
 
 .contact__form{
@@ -62,8 +58,7 @@
 
 .contact__form-button{
     background-color: var(--bg);
-    color: var(--primary);
-    font-weight: bold;
+    color: var(--text);
     border: none;
     border-radius: var(--space-sm);
     height: var(--space-xl);
