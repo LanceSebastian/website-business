@@ -17,6 +17,12 @@
     margin:0;
 }
 
+.our-offer__buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
 .our-offer__image{
     aspect-ratio: 4/3;
     max-width: 350px;

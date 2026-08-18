@@ -8,12 +8,24 @@
 
 }
 
+.projects__header-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
 .projects__content{
 
 }
 
 .projects__item{
 
+}
+
+.projects__item-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-md);
 }
 
 .projects__thumbnail{
