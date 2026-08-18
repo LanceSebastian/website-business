@@ -1,5 +1,4 @@
 - styles
-    - projects
     - performance
     - testimonials
     - pricing
