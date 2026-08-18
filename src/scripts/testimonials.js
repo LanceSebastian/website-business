@@ -15,13 +15,13 @@ const testimonials = [
     }
 ];
 
-const testimonialTemplate = document.getElementById("testimonialTemplate");
-const testimonialsList = document.getElementById("testimonials-list");
+const testimonialTemplate = document.getElementById("testimonials__template");
+const testimonialsList = document.getElementById("testimonials-content");
 
 testimonials.forEach(item => {
     const clone = testimonialTemplate.content.cloneNode(true);
-    clone.querySelector(".testimonialText").textContent = item.text;
-    clone.querySelector(".testimonialName").textContent = item.name;
-    clone.querySelector(".testimonialBusiness").textContent = item.business;
+    clone.querySelector(".testimonials__item-text").textContent = item.text;
+    clone.querySelector(".testimonials__item-author-name").textContent = item.name;
+    clone.querySelector(".testimonials__item-author-business").textContent = item.business;
     testimonialsList.appendChild(clone);
 });
