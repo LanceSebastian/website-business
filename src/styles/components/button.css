@@ -1,3 +1,10 @@
+.cta-buttons{
+    display: flex;
+    justify-content: center;
+
+    padding: var(--space-md);
+}
+
 .cta-button {
     --characters:0;
 
