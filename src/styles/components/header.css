@@ -1,5 +1,7 @@
 .header{
-
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
 }
 
 .header__eyebrow{
@@ -7,15 +9,16 @@
     font-size: var(--space-md);
     font-weight: 600;
     line-height: 4px;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     text-transform: uppercase;
     color: var(--primary);
     margin-top: var(--space-md);
 }
 
 .header__title{
-    font-size: clamp(var(--space-md), 2vw, var(--space-lg));
+    font-size: clamp(var(--space-xl), 3vw, var(--space-2xl));
     text-transform: capitalize;
+    line-height: 0.9;
 }
 
 .header__text{
