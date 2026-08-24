@@ -33,6 +33,7 @@ footer{
     display: flex;
     justify-content: start;
     gap: var(--space-md);
+    text-decoration: underline;
 }
 
 .footer__additional-info{
