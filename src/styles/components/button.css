@@ -11,9 +11,10 @@
     color: var(--bg-light);
     border-radius: 50px;
     width: 100%;
+    text-align: center;
 }
 
-.cta-buttons *.invisible, .cta-button.invisible{
+.cta-buttons *.invisible, .cta-button.invisible, .cta-buttons.invisible *{
     background: none;
     color: var(--primary);
     font-weight: bold;
