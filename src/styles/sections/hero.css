@@ -19,6 +19,7 @@
 
 /* Hero Header */
 .hero__title {
+    width: 100%; /* title-animation grows smaller containers, */
     font-size: clamp(var(--space-md), 2vw, var(--space-lg));
     text-align: center;
     line-height: 1;
@@ -35,7 +36,7 @@
 }
 
 .hero__title-animation {
-    margin-top: var(--space-md);
+    margin-top: var(--space-sm);
     font-size: var(--space-md) !important;
 }
 
@@ -51,42 +52,8 @@
 .hero__buttons{
     display: flex;
     justify-content: center;
-    margin-top: var(--space-md);
-    gap: var(--space-2xl);
-}
-
-.hero__buttons * {
-    --characters:0;
-
-    position: relative;
-    text-decoration: none;
-    color: var(--text);
-    transition: all 0.2s;
-
-    &:hover{
-        color: var(--primary);
-        font-weight: 500;
-    }
-
-    &::after{
-        content: "-";
-        position: absolute;
-        transition: all 0.2s;
-        left:-10%;
-    }
-
-    &:hover::after{
-        content: "-";
-        position: absolute;
-        transform: translateX(var(--characters));
-    }
-
-    &::before{
-        content: "";
-        position: absolute;
-        inset: -15px;
-
-    }
+    margin-top: var(--space-sm);
+    gap: var(--space-xl);
 }
 
 /* Hero Content */
