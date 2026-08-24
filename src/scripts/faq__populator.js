@@ -135,42 +135,42 @@ const faqSEO = [
     }
 ];
 
-const faqTemplate = document.getElementById("faqTemplate");
-const websitefaq = document.getElementById("websitesfaq");
-const pricingfaq = document.getElementById("pricingfaq");
-const plansfaq = document.getElementById("plansfaq");
-const seofaq = document.getElementById("seofaq");
+const faqTemplate = document.getElementById("faq__template");
+const websitefaq = document.getElementById("faq__websites");
+const pricingfaq = document.getElementById("faq__pricing");
+const plansfaq = document.getElementById("faq__plans");
+const seofaq = document.getElementById("faq__seo");
 
 faqWebsites.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
-    clone.querySelector(".question").textContent = faq.question;
+    clone.querySelector("span").textContent = faq.question;
     clone.querySelector(".answer").textContent = faq.answer;
     websitefaq.appendChild(clone);
 });
 
 faqPricing.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
-    clone.querySelector(".question").textContent = faq.question;
+    clone.querySelector("span").textContent = faq.question;
     clone.querySelector(".answer").textContent = faq.answer;
     pricingfaq.appendChild(clone);
 });
 
 faqPlans.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
-    clone.querySelector(".question").textContent = faq.question;
+    clone.querySelector("span").textContent = faq.question;
     clone.querySelector(".answer").textContent = faq.answer;
     plansfaq.appendChild(clone);
 });
 
 faqSEO.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
-    clone.querySelector(".question").textContent = faq.question;
+    clone.querySelector("span").textContent = faq.question;
     clone.querySelector(".answer").textContent = faq.answer;
     seofaq.appendChild(clone);
 });
 
 /* FAQ Function */
-document.querySelectorAll(`.faqContainer`).forEach(faq => {
+document.querySelectorAll(`.faq__query`).forEach(faq => {
   faq.addEventListener('click', () => {
     faq.classList.toggle("active");
   })
