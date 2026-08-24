@@ -6,7 +6,7 @@
 }
 
 .faq__header{
-    
+
 }
 
 .faq__tabs{
@@ -26,5 +26,8 @@
 }
 
 .faq__tab-filter{
-
+    display: none;
+    gap: 16px;
+    padding: 0px 16px;
+    margin: auto;
 }

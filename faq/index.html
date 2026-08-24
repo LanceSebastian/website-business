@@ -71,44 +71,40 @@
         </nav>
         
         <main>
-
-            <div class="squeeze headerContainer">
-                <div class="header text">
-                    <span class="eyebrow-hero">Here are some answers</span>
-                    <h1>Frequently Asked <div class="lancify">Questions</div></h1>
-                    <p class="muted textbox start">Everything you need to know before getting started: from how the process works to what's included in each plan.</p>
-                </div>
-            </div>
-    
             <!-- FAQ -->
-            <section id="faq">
-                <div class="autoMargin pad-h-32 pad-w-16 gap-32 center">
-                    <div class="tab">
-                        <button class="tabLinks active" onclick="openfaq(event,'websitesfaq')">Websites</button>
-                        <button class="tabLinks" onclick="openfaq(event,'pricingfaq')">Pricing</button>
-                        <button class="tabLinks" onclick="openfaq(event,'plansfaq')">Plans</button>
-                        <button class="tabLinks" onclick="openfaq(event,'seofaq')">SEO</button>
-                    </div>
-    
-                    <template id="faqTemplate">
-                        <div class="faqContainer">
-                            <div class="questionContainer">
-                                <span class="question"></span>
-                                <i class="i-24 fa-solid fa-angle-down"></i>
-                            </div>
-                            <div class="answer"></div>
-                        </div>
-                    </template>
-    
-                    <div id="websitesfaq" class="tabContent" style="display:grid;"></div>
-    
-                    <div id="pricingfaq" class="tabContent"></div>
-    
-                    <div id="plansfaq" class="tabContent"></div>
-    
-                    <div id="seofaq" class="tabContent"></div>
-    
+            <section id="faq" class = "faq">
+                <div class="faq__header header">
+                    <span class="header__eyebrow">Here are some answers</span>
+                    <h2 class="header__title">Frequently Asked Questions</h2>
+
+                    <p class="header__text">
+                        Everything you need to know before getting started: from how the process works to what's included in each plan.
+                    </p>
                 </div>
+                <div class="faq__tabs faq-buttons">
+                    <button class="active" onclick="selectFilter(event,'faq__websites')">Websites</button>
+                    <button class="" onclick="selectFilter(event,'faq__pricing')">Pricing</button>
+                    <button class="" onclick="selectFilter(event,'faq__plans')">Plans</button>
+                    <button class="" onclick="selectFilter(event,'faq__seo')">SEO</button>
+                </div>
+
+                <template id="faq__template">
+                    <div class="faq__query">
+                        <div class="faq__query-question">
+                            <span></span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                        <div class="faq__answer"></div>
+                    </div>
+                </template>
+
+                <div id="faq__websites" class="faq__tab-filter" style="display:grid;"></div>
+
+                <div id="faq__pricing" class="faq__tab-filter"></div>
+
+                <div id="faq__plans" class="faq__tab-filter"></div>
+
+                <div id="faq__seo" class="faq__tab-filter"></div>
                 
             </section>
                 
@@ -177,9 +173,8 @@
             </div>
         </footer>
 
-        <script src = "/src/scripts/coolFunctions.js"></script>
-        <script src= "/src/scripts/testimonials.js"></script>
-        <script src="/src/scripts/faq.js"></script>
+        <script src="/src/scripts/faq__populator.js"></script>
+        <script src="/src/scripts/faq__tab-filter.js"></script>
 
 
         <!--update date-->
