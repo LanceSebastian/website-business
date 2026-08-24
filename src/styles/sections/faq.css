@@ -1,0 +1,30 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+    gap: var(--space-lg);
+}
+
+.faq__header{
+    
+}
+
+.faq__tabs{
+
+}
+
+.faq__query{
+
+}
+
+.faq__query-question{
+
+}
+
+.faq__answer{
+
+}
+
+.faq__tab-filter{
+
+}
