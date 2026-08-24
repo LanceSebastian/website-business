@@ -28,40 +28,45 @@
         </script>
     </head>
     <body>
-        <nav class="navBarContainer solid">
-            <div class="navBar">
-                <div class="navItem hover">
-                    <a href="/" aria-label="Home">
-                        <img class="pfp" src="/src/images/logo-wide2.svg" alt="Lance Sebastian">
-                    </a>
-                </div>
-                
-                <input type="checkbox" id="check" aria-label="Toggle mobile menu">
-
-                <ul id="myTopnav" class="links" style="display: flex; align-items: center;">
-                    <li class="navItem " data-link="home"><a href="/">Home</a></li>
-                    <li class="navItem menu-item selected">
-                        <a href="/about">About <i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="dropdown">
-                            <li class="dropItem" ><a href="/about">About Us</a></li>
-                            <li class="dropItem" ><a href="/projects">Projects</a></li>
-                            <li class="dropItem" ><a href="/faq">FAQ</a></li>
+        <nav class="nav">
+            <!-- Company Logo -->
+            <a class="nav__header" href="/" aria-label="Home">
+                Owl Vision
+            </a>
+            
+            <div class="nav__content">
+                <!-- Label Checks-->
+                <input type="checkbox" id="mobile-menu" aria-label="Toggle mobile menu">
+                <input type="checkbox" id="about-dropdown" aria-label="Toggle about dropdown">
+    
+                <!-- Navigation -->
+                <ul class="nav__links">
+                    <li><a href="/">Home</a></li>
+                    <li class="nav__link-dropdown-parent">
+                        <label for="about-dropdown" class="mobile-only nav__link-dropdown-button">About <i class="fa-solid fa-angle-down"></i></Label>
+                        <a class="desktop-only" href="/about">About <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="nav__link-dropdown">
+                            <li><a href="/about" aria-label="About Owl Vision">Owl Vision</a></li>
+                            <li><a href="/projects" aria-label="View Projects">Projects</a></li>
+                            <li><a href="/faq" aria-label="Frequently Asked Questions">FAQ</a></li>
                         </ul>
                     </li>
-                    <li class="navItem " data-link="pricing"><a href="/pricing">Pricing</a></li>
-                    <li class="navItem " data-link="contactMe"><a href="/contact">Contact</a></li>
+    
+                    <li><a href="/pricing">Pricing</a></li>
+                    <li><a href="/contact" aria-label="Contact Us">Contact</a></li>
+                    <li><a href="/contact" aria-label="Get Started">Get Started</a></li>
                 </ul>
-
-                <div style="display: flex; align-items: center; gap: 16px;">
-                    <a class="ctaButton" href="#contactMe">Get Started</a>
-                    <label for="check" class="checkbtn" aria-label="Open navigation menu">
-                        <i class="fa fa-bars"></i>
-                    </label>
-                    <button id="darkModeToggle" class="toggle" aria-label="Toggle dark mode">
-                        <i class="i-24 fa-regular fa-moon"></i>
-                        <i class="i-24 fa-regular fa-sun"></i>
-                    </button>
-                </div>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="darkModeToggle" class="darkmode-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-regular fa-moon"></i>
+                    <i class="fa-regular fa-sun"></i>
+                </button>
+    
+                <!-- Burger Button -->
+                <label for="mobile-menu" class="burger-button" aria-label="Open Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </label>
             </div>
         </nav>
         
