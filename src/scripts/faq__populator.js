@@ -144,28 +144,28 @@ const seofaq = document.getElementById("faq__seo");
 faqWebsites.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
     clone.querySelector("span").textContent = faq.question;
-    clone.querySelector(".answer").textContent = faq.answer;
+    clone.querySelector(".faq__answer").textContent = faq.answer;
     websitefaq.appendChild(clone);
 });
 
 faqPricing.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
     clone.querySelector("span").textContent = faq.question;
-    clone.querySelector(".answer").textContent = faq.answer;
+    clone.querySelector(".faq__answer").textContent = faq.answer;
     pricingfaq.appendChild(clone);
 });
 
 faqPlans.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
     clone.querySelector("span").textContent = faq.question;
-    clone.querySelector(".answer").textContent = faq.answer;
+    clone.querySelector(".faq__answer").textContent = faq.answer;
     plansfaq.appendChild(clone);
 });
 
 faqSEO.forEach(faq => {
     const clone = faqTemplate.content.cloneNode(true);
     clone.querySelector("span").textContent = faq.question;
-    clone.querySelector(".answer").textContent = faq.answer;
+    clone.querySelector(".faq__answer").textContent = faq.answer;
     seofaq.appendChild(clone);
 });
 
