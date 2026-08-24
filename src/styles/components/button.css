@@ -5,7 +5,7 @@
     padding: var(--space-md);
 }
 
-.cta-buttons * {
+.cta-buttons *, .cta-button{
     background: var(--primary);
     padding: var(--space-md);
     color: var(--bg-light);
@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.cta-buttons *.invisible{
+.cta-buttons *.invisible, .cta-button.invisible{
     background: none;
     color: var(--primary);
     font-weight: bold;
