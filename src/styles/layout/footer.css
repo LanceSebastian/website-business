@@ -64,13 +64,22 @@ footer{
 }
 
 .footer__contact-info-list{
-
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    padding: 0;
+    
 }
 
 .footer__contact-detail{
-
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        inset: -5px;
+    }
 }
 
 .footer__page-info{
-
+    margin-top: var(--space-lg);
 }
