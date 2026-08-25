@@ -1,6 +1,9 @@
-- About me Page
+- About Us Page
+    - Rewrite about us description
 - Pricing cards still need perfecting.
     - Especially with the about me buttons
+
+- Add proper header hierarchy.
 
 - NavBar.
     - Bug in Mobile: Some text (especially in the footer) 
