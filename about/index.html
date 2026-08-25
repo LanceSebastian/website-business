@@ -71,21 +71,19 @@
         </nav>
         
         <main>
-
-            <div class="squeeze headerContainer">
-                <div class="header">
-                    <span class="eyebrow-hero">How does it work?</span>
-                    <h1>About <div class = "lancify">L S Web Designs</div></h1>
+            <!-- About Us -->
+            <section id="about" class="about">
+                <div class="about__header header">
+                    <span class="header__eyebrow">How does it work?</span>
+                    <h2 class="header__title">About Us</h2>
                 </div>
-            </div>
-    
-            <section id="aboutMe" class="pad-w-16 pad-h-32 autoMargin squeeze">
-                <div class="mediaContent">
+
+                <div class="about__content">
                     <picture>
                         <source type="image/avif" srcset="/src/images/pfp.avif">
                         <source type="image/webp" srcset="/src/images/pfp.webp">
                         <img
-                        class="echo media"
+                        class="about__image"
                         src="/src/images/pfp.jpeg"
                         alt="My Profile"
                         width="400"
@@ -94,105 +92,104 @@
                         decoding="async"
                         >
                     </picture>
-                    <div class="box pad-w-16">
-                        <div class="titlebox start">
-                            <span class="eyebrow">My Background</span>
-                            <h2>My Name is Lance.</h2>
-                        </div>
-                        <p class="large">
+                    <div class="about__description">
+                        <p>
                             I'm a British-Filipino freelance web developer living in Somerset, UK, 
                             with a BSc (Hons) in Computer Science from Aberystwyth University. 
                         </p>
-                        <p class="large">
+                        <p>
                             I first got into programming out of curiosity, starting with game development. 
                             Today, I create clean, responsive websites for small 
                             businesses and startups, handling everything from design to deployment. 
                         </p>
-                        <p class="large">
+                        <p>
                             My goal is to take the stress out of getting online. I work quickly 
                             and transparently, delivering websites that look professional, load 
                             fast, and keep your business visible to the right customers.
                         </p>
                         
-                        <div class="buttonContainer pad-h-16">
-                            <a class="grow ctaButton"
-                                href="https://drive.google.com/file/d/14KOcSzsOp2CGoHTBoIHWDZUTqAuMDiAM/view?usp=sharing">Résumé</a>
-                            <a class="grow ctaButton" href="/#contactMe">Contact Me</a>
+                        <div class="about__buttons cta-buttons">
+                            <a href="https://drive.google.com/file/d/14KOcSzsOp2CGoHTBoIHWDZUTqAuMDiAM/view?usp=sharing">Résumé</a>
+                            <a href="/#contactMe">Contact Me</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section id="process">
-                <div class="pad-w-16 pad-h-48 autoMargin squeeze">
-                    <div class="titlebox pad-w-16">
-                        <span class="eyebrow">How It Works</span>
-                        <h2>We Take Care of Everything</h2>
-                        <p class="muted textbox p-8">Here's exactly what to expect from the moment you get in touch to the day your site goes live. Generally takes 2-3 weeks.</p>
-                    </div>
-                    <ol class="processList">
-                        <li class="processStep">
-                            <div class="processNum">1</div>
-                            <div>
-                                <h3>Contact</h3>
-                                <p class="muted process">Share your business goals and brand values thoroughly in a meeting or with a <a class="link bold" style="color: var(--secondary);" href="https://forms.gle/KbPcThyj9PA6hkVu7">questionnaire.</a></p>
-                            </div>
-                        </li>
-                        <li class="processStep">
-                            <div class="processNum">2</div>
-                            <div>
-                                <h3>Sign Agreement</h3>
-                                <p class="muted process">Transparent 6-month agreement with clear terms. No hidden fees or surprises. Just Honest Work.</p>
-                            </div>
-                        </li>
-                        <li class="processStep">
-                            <div class="processNum">3</div>
-                            <div>
-                                <h3>First Invoice</h3>
-                                <p class="muted process">Pay the first invoice to kick off development. No deposits beyond your monthly plan.</p>
-                            </div>
-                        </li>
-                        <li class="processStep">
-                            <div class="processNum">4</div>
-                            <div>
-                                <h3>Your Site Goes Live</h3>
-                                <p class="muted process">Your site goes live. I handle hosting, launch, and any fixes so everything works from day one.</p>
-                            </div>
-                        </li>
-                    </ol>
+
+            <!-- Get Started Process -->
+            <section id="process" class="process">
+                <div class="process__header header">
+                    <span class="header__eyebrow">How It Works</span>
+                    <h2 class="header__title">We Take Care of Everything</h2>
+                    <p class="header__text">
+                        Here's exactly what to expect from the moment you get 
+                        in touch to the day your site goes live. Generally 
+                        takes 2-3 weeks.
+                    </p>
                 </div>
+                <ol class="process__list">
+                    <li class="process__list-item" style="--stepNumber: 1">
+                        <h3>Contact</h3>
+                        <p>
+                            Share your business goals and brand values 
+                            thoroughly in a meeting or with a 
+                            <a href="https://forms.gle/KbPcThyj9PA6hkVu7">
+                                questionnaire.
+                            </a>
+                        </p>
+                    </li>
+                    <li class="process__list-item" style="--stepNumber: 2">
+                        <h3>Sign Agreement</h3>
+                        <p>
+                            Transparent 6-month agreement with clear terms. 
+                            No hidden fees or surprises. Just Honest Work.
+                        </p>
+                    </li>
+                    <li class="process__list-item" style="--stepNumber: 3">
+                        <h3>First Invoice</h3>
+                        <p>
+                            Pay the first invoice to kick off development. 
+                            No deposits beyond your monthly plan.
+                        </p>
+                    </li>
+                    <li class="process__list-item" style="--stepNumber: 4">
+                        <h3>Your Site Goes Live</h3>
+                        <p>
+                            Your site goes live. I handle hosting, launch,
+                            and any fixes so everything works from day one.
+                        </p>
+                    </li>
+                </ol>
             </section>
             
             <!-- Testimonials -->
-            <section id="testimonials">
-                <div class="autoMargin pad-h-32 pad-w-16 center squeeze">
-                    <div class="center">
-                        <span class="eyebrow">Testimonials</span>
-                        <h2>What Clients Say</h2>
-                    </div>
-                    <template id="testimonialTemplate">
-                        <div class="testimonialCard">
-                            <i class="fa-solid fa-quote-left testimonialQuote"></i>
-                            <p class="testimonialText"></p>
-                            <div class="testimonialAuthor">
-                                <div style="display:flex; flex-direction: column;">
-                                    <span class="testimonialName"></span>
-                                    <span class="testimonialBusiness muted"></span>
-                                </div>
-                                <div class="testimonialStars">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
+            <section id="testimonials" class="testimonials">
+                <div class="testimonials__header header">
+                    <span class="header__eyebrow">Testimonials</span>
+                    <h2 class="header__title">What Clients Say</h2>
+                </div>
+
+                <template id="testimonials__template">
+                    <div class="testimonials__item">
+                        <i class="testimonials__item-icon fa-solid fa-quote-left"></i>
+                        <p class="testimonials__item-text"></p>
+                        <div class="testimonials__item-header">
+                            <div class="testimonials__item-author">
+                                <span class="testimonials__item-author-name"></span>
+                                <span class="testimonials__item-author-business"></span>
+                            </div>
+                            <div class="testimonials__item-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
-                    </template>
-                    <div class="testimonialsContainer">
-                        <div id="testimonials-list" style="display: contents;"></div>
-                        <div class="testimonialCard testimonialGhost"></div>
                     </div>
-                </div>
+                </template>
+
+                <div id="testimonials-content" class="testimonials__item-container"></div>
             </section>
         </main>
 
