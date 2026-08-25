@@ -70,44 +70,25 @@
             </div>
         </nav>
         
-        <main>
-
-            <div class="squeeze headerContainer">
-                <div class="header">
-                    <span class="eyebrow-hero">Websites I've built.</span>
-                    <h1>Projects <div class="lancify">Library</div></h1>
-                </div>
+        <main id="projects" class="projects">
+            <div class="projects__header header">
+                <span class="header__eyebrow">Portfolio</span>
+                <h2 class="header__title">Our Recent Work</h2>
+                <p class="header__text">
+                    Hand-built websites, no templates. Here's a sample of what we've designed and delivered for clients and personal projects.
+                </p>
             </div>
-            
-            <section class="projectLibrary">
-                <div class="project">
-                    <a class="grow-s" href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">
-                        <picture>
-                            <source type="image/webp" srcset="/src/images/ladasritongbai.webp">
-                            <img
-                            class="thumbnail"
-                            src="/src/images/ladasritongbai.png"
-                            alt="Lada Sritongbai Project"
-                            loading="lazy"
-                            decoding="async"
-                            >
-                        </picture>
-                    </a>
-                    <div>
-                        <h3>Lada Sritongbai</h3>
-                        <p class="muted">
-                            Lada is a narrative illustrator specialising in character design and storytelling. 
-                            I designed and built a custom portfolio to reflect her unique artistic style and showcase her work effectively. 
-                        </p>
-                        <a class="bigButton" href="https://ladasritongbai.art">Visit Website</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <a class="grow-s" href="https://bosface.com" aria-label="Visit BoSface Website">
+
+            <!-- Projects Content-->
+            <div class="projects__library">
+
+                <!-- BoSFace -->
+                <div class="projects__item">
+                    <a href="https://bosface.com" aria-label="Visit BoSface Website">
                         <picture>
                             <source type="image/webp" srcset="/src/images/bosface.webp">
                             <img
-                            class="thumbnail"
+                            class="projects__thumbnail"
                             src="/src/images/bosface.png"
                             alt="BoSface Project"
                             loading="lazy"
@@ -115,62 +96,44 @@
                             >
                         </picture>
                     </a>
-                    <div>
+                    <div class="projects__item-content">
                         <h3>BoSface</h3>
-                        <p class="muted">
+                        <p>
                             Designed and Built for a client, BoSface is an up-and-coming local beauty and wellness studio
                             specialising in personalised facial and massage treatments.
                         </p>
-                        <a class="bigButton" href="https://bosface.com">Visit Website</a>
+                        <div class="projects__item-buttons">
+                            <a class="cta-button secondary" href="https://bosface.com" aria-label="Visit BoSface Website">Visit Website</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <a class="grow-s" href="https://orchid-deer-358398.hostingersite.com" aria-label="Visit South Central Barbershop Website">
+
+                <!-- Lada Sritongbai -->
+                <div class="projects__item">
+                    <a href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">
                         <picture>
-                            <source type="image/webp" srcset="/src/images/southcentralbarbershop.webp">
+                            <source type="image/webp" srcset="/src/images/ladasritongbai.webp">
                             <img
-                            class="thumbnail"
-                            src="/src/images/southcentralbarbershop.png"
-                            alt="South Central Barbershop Project"
+                            class="projects__thumbnail"
+                            src="/src/images/ladasritongbai.png"
+                            alt="Lada Sritongbai Project"
                             loading="lazy"
                             decoding="async"
                             >
                         </picture>
                     </a>
-                    <div>
-                        <h3>South Central</h3>
-                        <p class="muted">
-                            A personal concept website designed to explore branding, layout,
-                            and responsive design for a modern barbershop. This project is
-                            independent and created for portfolio purposes.
+                    <div class="projects__item-content">
+                        <h3>Lada Sritongbai</h3>
+                        <p>
+                            Lada is a narrative illustrator specialising in character design and storytelling. 
+                            We designed and built a custom portfolio to reflect her unique artistic style and showcase her work effectively. 
                         </p>
-                        <a class="bigButton" href="https://orchid-deer-358398.hostingersite.com">Visit Website</a>
+                        <div class="projects__item-buttons">
+                            <a class="cta-button secondary" href="https://ladasritongbai.art" aria-label="Visit Lada Sritongbai Website">Visit Website</a>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <a class="grow-s" href="https://lightseagreen-rabbit-307113.hostingersite.com" aria-label="Visit Sampsons Website">
-                        <picture>
-                            <source type="image/webp" srcset="/src/images/sampsons.webp">
-                            <img
-                            class="thumbnail"
-                            src="/src/images/sampsons.png"
-                            alt="Sampson Barbershop Project"
-                            loading="lazy"
-                            decoding="async"
-                            >
-                        </picture>
-                    </a>
-                    <div>
-                        <h3>Sampsons</h3>
-                        <p class="muted">
-                            A personal concept website built to explore branding, layout,
-                            and responsive design for a modern barbershop. This project
-                            is independent and developed purely for portfolio purposes.
-                        </p>
-                        <a class="bigButton" href="https://lightseagreen-rabbit-307113.hostingersite.com">Visit Website</a>
-                    </div>
-                </div>
-            </section>
+            </div>
         </main>
 
 

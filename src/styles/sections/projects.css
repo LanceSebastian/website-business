@@ -8,6 +8,12 @@
 
 }
 
+.projects__library{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px,100%),1fr));
+    gap: var(--space-md);
+}
+
 .projects__header-buttons{
     display: flex;
     justify-content: center;
