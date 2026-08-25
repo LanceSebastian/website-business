@@ -70,100 +70,91 @@
             </div>
         </nav>
         
-        <main>
-            
-            <div class="squeeze headerContainer">
-                <div class="header text">
-                    <span class="eyebrow-hero">Clear, Honest Pricing</span>
-                    <h1>The <div class = "lancify">Packages</div></h1>
-                    <p class="muted textbox start p-8">No hidden fees, no surprise invoices. Pick a plan that fits your budget and I'll handle everything from design to launch.</p>
+        <main id="pricing" class="pricing">
+            <div class="pricing__header header">
+                <span class="header__eyebrow">Pricing</span>
+                <h2 class="header__title">Choose Your Plan</h2>
+            </div>
+
+            <div class="pricing__packages">
+                <div class="pricing__packages-item">
+                    <h3 class="pricing__packages-item-name">Lump Sum</h3>
+                    <ul class="pricing__packages-item-content">
+                        <li>Up to 5 Pages</li>
+                        <li>Design & Development</li>
+                        <li>+£10/mo Hosting</li>
+                        <li>+£20/mo Unlimited Edits & Support</li>
+                        <li>Full Ownership</li>
+                        <li>Built to Google Standards</li>
+                        <li data-feature="excluded">24/7 Support</li>
+                        <li data-feature="excluded">Lifetime Updates</li>
+                    </ul>
+                    <div class="pricing__packages-item-footer">
+                        <div class="pricing__packages-item-price">£400<span> +£10/mo Hosting</span></div>
+                        <a class="pricing__packages-item-button cta-button" href="#contactMe">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing__packages-item" data-package="recommended">
+                    <h3 class="pricing__packages-item-name">Monthly</h3>
+                    <ul class="pricing__packages-item-content">
+                        <li>Up to 5 Pages</li>
+                        <li>Design & Development</li>
+                        <li>Includes Hosting</li>
+                        <li>Includes Domain</li>
+                        <li>Unlimited Edits</li>
+                        <li>24/7 Support</li>
+                        <li>Lifetime Updates</li>
+                        <li>Built to Google Standards</li>
+                    </ul>
+                    <div class="pricing__packages-item-footer">
+                        <div class="pricing__packages-item-price">£50<span> Per Month</span></div>
+                        <a class="pricing__packages-item-button cta-button" href="#contactMe">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing__packages-item">
+                    <h3 class="pricing__packages-item-name">ECommerce</h3>
+                    <ul class="pricing__packages-item-content">
+                        <li>Woocommerce Store</li>
+                        <li>Up to 9 pages</li>
+                        <li>Integrated Basic Shipping</li>
+                        <li>Fully Editable In WordPress CMS</li>
+                        <li>Payment Gateway Integrated</li>
+                        <li>SSL Included</li>
+                        <li>Systems Tutorial Walkthrough</li>
+                        <li data-feature="excluded">Unlimited Edits</li>
+                        <li data-feature="excluded">24/7 Support</li>
+                    </ul>
+                    <div class="pricing__packages-item-footer">
+                        <div class="pricing__packages-item-price">£1200<span> Starting</span></div>
+                        <a class="pricing__packages-item-button cta-button" href="#contactMe">Get Started</a>
+                    </div>
                 </div>
             </div>
-    
-            <section id="pricing">
-                <div class="autoMargin pad-w-16 pad-h-32 gap-32 center">
-                    <div class="packageContainer">
-                        <div class="package">
-                            <h3 class="packageTitle">Lump Sum</h3>
-                            <ul class="offers">
-                                <li>Up to 5 Pages</li>
-                                <li>Design & Development</li>
-                                <li>+£10/mo Hosting</li>
-                                <li>+£20/mo Unlimited Edits & Support</li>
-                                <li>Full Ownership</li>
-                                <li>Built to Google Standards</li>
-                                <li class="loss">24/7 Support</li>
-                                <li class="loss">Lifetime Updates</li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="price">£400<span class=""> +£10/mo Hosting</span></div>
-                                <a class=" bigButton" href="#contactMe">Get Started</a>
-                            </div>
-                        </div>
-                        <div class="recommend package">
-                            <h3 class="packageTitle">Monthly</h3>
-                            <ul class="offers">
-                                <li>Up to 5 Pages</li>
-                                <li>Design & Development</li>
-                                <li>Includes Hosting</li>
-                                <li>Includes Domain</li>
-                                <li>Unlimited Edits</li>
-                                <li>24/7 Support</li>
-                                <li>Lifetime Updates</li>
-                                <li>Built to Google Standards</li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="price">£50<span class=""> Per Month</span></div>
-                                <a class=" bigButton" href="#contactMe">Get Started</a>
-                            </div>
-                        </div>
-                        <div class="package">
-                            <h3 class="packageTitle">ECommerce</h3>
-                            <ul class="offers">
-                                <li>Woocommerce Store</li>
-                                <li>Up to 9 pages</li>
-                                <li>Integrated Basic Shipping</li>
-                                <li>Fully Editable In WordPress CMS</li>
-                                <li>Payment Gateway Integrated</li>
-                                <li>SSL Included</li>
-                                <li>Systems Tutorial Walkthrough</li>
-                                <li class="loss">Unlimited Edits</li>
-                                <li class="loss">24/7 Support</li>
-                            </ul>
-                            <div class="bottom">
-                                <div class="price">£1200<span class=""> Starting</span></div>
-                                <a class=" bigButton" href="#contactMe">Get Started</a>
-                            </div>
-                        </div>
-                    </div>
-                    <details class="addons">
-                        <summary>View Add-ons <i class="fa-solid fa-chevron-down"></i></summary>
-                        <ul class="addonList">
-                            <li>
-                                <span>Extra Pages</span>
-                                <span class="addonPrice">+£50/page</span>
-                            </li>
-                            <li>
-                                <span>Blog Integration</span>
-                                <span class="addonPrice">+£200</span>
-                            </li>
-                            <li>
-                                <span>Google Business Profile Setup</span>
-                                <span class="addonPrice">+£75</span>
-                            </li>
-                            <li>
-                                <span>Booking System Integration</span>
-                                <span class="addonPrice">+£75</span>
-                            </li>
-                            <li>
-                                <span>Basic Ecommerce Setup</span>
-                                <span class="addonPrice">+£50 per month</span>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-            </section>
-                
+            <details class="pricing__addon">
+                <summary>View Add-ons <i class="fa-solid fa-chevron-down"></i></summary>
+                <ul class="pricing__addon-list">
+                    <li>
+                        <span>Extra Pages</span>
+                        <span>+£50/page</span>
+                    </li>
+                    <li>
+                        <span>Blog Integration</span>
+                        <span>+£200</span>
+                    </li>
+                    <li>
+                        <span>Google Business Profile Setup</span>
+                        <span>+£75</span>
+                    </li>
+                    <li>
+                        <span>Booking System Integration</span>
+                        <span>+£75</span>
+                    </li>
+                    <li>
+                        <span>Basic Ecommerce Setup</span>
+                        <span>+£50 per month</span>
+                    </li>
+                </ul>
+            </details>
         </main>
 
        <footer>
