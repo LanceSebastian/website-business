@@ -12,6 +12,7 @@
 @import "./styles/components/project-card.css";
 @import "./styles/components/testimonial-card.css";
 @import "./styles/components/header.css";
+@import "./styles/components/hyperlink.css";
 
 @import "./styles/layout/footer.css";
 @import "./styles/layout/navbar.css";
