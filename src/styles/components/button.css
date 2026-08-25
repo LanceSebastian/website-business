@@ -26,13 +26,6 @@
     padding-right: var(--space-lg);
 }
 
-.faq-buttons{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--space-md);
-}
-
 .faq-buttons *{
     background: var(--bg);
     padding: var(--space-sm);
