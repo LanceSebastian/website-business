@@ -1,0 +1,25 @@
+.process{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-md);
+}
+
+.process__header{
+    
+}
+
+.process__list{
+    padding: 0;
+    margin: 0;
+}
+
+.process__list-item{
+    --stepNumber: 1;
+
+    display: flex;
+
+    &::before{
+        content: var(--stepNumber);
+
+    }
+}
