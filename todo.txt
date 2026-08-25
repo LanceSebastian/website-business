@@ -2,12 +2,15 @@
 - Pricing cards still need perfecting.
     - Especially with the about me buttons
 
-- NavBar bug in Mobile.
-    - Some text (especially in the footer) 
+- NavBar.
+    - Bug in Mobile: Some text (especially in the footer) 
     get rendered on top of the nav popup.
+    - Fix spacing
 
 - Dark Mode
 
 - Desktop Version 
 
 - Prune dead classes
+
+- Final Checks.
