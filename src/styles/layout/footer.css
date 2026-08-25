@@ -15,7 +15,9 @@ footer{
     line-height: var(--space-md);
 }
 
-.footer__header p{
+.footer__header{
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__social-links{
@@ -29,11 +31,13 @@ footer{
     text-decoration: none;
 }
 
-.footer__buttons{
-    display: flex;
-    justify-content: start;
-    gap: var(--space-md);
-    text-decoration: underline;
+.footer__button{
+    background: var(--primary);
+    padding: var(--space-sm);
+    color: var(--bg-light);
+    border-radius: 50px;
+    text-align: center;
+    width: 50%;
 }
 
 .footer__additional-info{
