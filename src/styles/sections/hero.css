@@ -17,6 +17,13 @@
     padding: var(--space-md);
 }
 
+.hero.secondary{
+    display: flex;
+    flex-direction: column;
+    min-height: 45vh;
+    padding: var(--space-md);
+}
+
 /* Hero Header */
 .hero__title {
     width: 100%; /* title-animation grows smaller containers, */
