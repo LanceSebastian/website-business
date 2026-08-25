@@ -587,12 +587,8 @@
                             <i class="fa-brands fa-facebook"></i>
                         </a>
                     </div>
-                    <div class="footer__buttons">
-                        <a href="#contactMe" aria-label="Get Started" style="--characters: 9ch;">Get Started</a>
-                        <a href="#projects" aria-label="View Projects" style="--characters: 10.5ch;">View Projects</a>
-                    </div>
+                    <a class="footer__button" href="#contactMe" aria-label="Get Started" style="--characters: 9ch;">Get Started</a>
                 </div>
-
                 <!-- Footer Right-side -->
                 <div class="footer__additional-info">
                     
@@ -644,10 +640,7 @@
 
         </footer>
         
-        <script>
-            document.getElementById("date").innerHTML = document.lastModified;
-            document.getElementById("year").innerHTML = new(Date(document.lastModified)).getFullYear();
-        </script>
+        <script src="./src/scripts/dateManager.js"></script>
         <script src="./src/scripts/coolFunctions.js"></script>
         <script src="./src/scripts/dynamicNav.js"></script>
         <script src="./src/scripts/heroAnimation.js"></script>
