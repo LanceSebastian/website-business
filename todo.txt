@@ -1,17 +1,12 @@
-- styles
-    - performance
-    - testimonials
-    - pricing
-    - contact
-    - footer
+- About me Page
+- Pricing cards still need perfecting.
+    - Especially with the about me buttons
 
-- pages
-    - home x
-    - faq
-    - contact
-    - about
-    - projects
-    - 
+- NavBar bug in Mobile.
+    - Some text (especially in the footer) 
+    get rendered on top of the nav popup.
+
+- Dark Mode
 
 - Desktop Version 
 
