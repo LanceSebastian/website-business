@@ -111,68 +111,80 @@
         </main>
 
        <footer>
-            <div class="col-2 align-start">
-                <div>
-                    <div>
-                        <h2>Lance Sebastian</h2>
-                        <p class="x-large">I design and build websites.</p>
+            <div class="footer__content">
+
+                <!-- Footer Left-side -->
+                <div class="footer__header">
+                    <h2>Owl Vision</h2>
+                    <p>Website design for small businesses.</p>
+                    <div class="footer__social-links">
+                        <a href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/LanceSebastian" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lance.sebasstian/#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100011316192612" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
                     </div>
-                    <a class="grow i-24" href="https://www.linkedin.com/in/lance-vincent-sebastian-1bb68625b" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a class="grow i-24" href="https://github.com/LanceSebastian" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a class="grow i-24" href="https://www.instagram.com/lance.sebasstian/#" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="grow i-24" href="https://www.facebook.com/profile.php?id=100011316192612" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
+                    <a class="footer__button" href="#contactMe" aria-label="Get Started" style="--characters: 9ch;">Get Started</a>
                 </div>
-                <div class="col-2" style="gap: 32px;">
-                    <div>
-                        <h2>Quick Links</h2>
-                        <ul id="quickLinks" class="footerLinks">
+                <!-- Footer Right-side -->
+                <div class="footer__additional-info">
+                    
+                    <div class="footer__website-links">
+                        <h2>Website Links</h2>
+                        <ul class="footer__quick-links">
                             <li><a href="/">Home</a></li>
                             <li><a href="/about">About Me</a></li>
                             <li><a href="/projects">Projects</a></li>
                             <li><a href="/faq">FAQ</a></li>
-                            <li class="break"></li>
                             <li><a href="/pricing">Pricing</a></li>
                             <li><a href="/contact">Contact</a></li>
                         </ul>
                     </div>
-                    <div>
+
+                    <div class="footer__contact-info">
                         <h2>Contact Info</h2>
-                        <ul class="footerLinks">
-                            <li>
-                                <i class="fa-solid fa-pen-to-square" style="height: 6px"></i>
-                                <a href="https://forms.gle/yYzELF5MDNC5aKRPA">Click to Complete Questionnaire</a>
+                        <ul class="footer__contact-info-list">
+
+                            <li class="footer__contact-detail">
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <a href="https://forms.gle/yYzELF5MDNC5aKRPA" aria-label="Complete Questionnaire">Click to Complete Questionnaire</a>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-envelope" style="height: 6px"></i>
-                                <a href="mailto:lsebastian.webdev@gmail.com">lsebastian.webdev@gmail.com</a>
+                            
+                            <li class="footer__contact-detail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:lsebastian.webdev@gmail.com" aria-label="Send Email">lsebastian.webdev@gmail.com</a>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-phone" style="height: 6px"></i>
-                                <a href="tel:+447472632095">+44 7472 632095</a>
+                            
+                            <li class="footer__contact-detail">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+447472632095" aria-label="Call Phone">+44 7472 632095</a>
                             </li>
-                            <li>
-                                <i class="fa-solid fa-map-marker-alt" style="height: 6px"></i>
-                                <a href="https://www.google.com/maps/place/Somerset/@51.0674082,-4.3610889,8z/">Somerset, UK</a>
+                            
+                            <li class="footer__contact-detail">
+                                <i class="fa-solid fa-map-marker-alt"></i>
+                                <a href="https://www.google.com/maps/place/Somerset/@51.0674082,-4.3610889,8z/" aria-label="View Location on Google Maps">Somerset, UK</a>
                             </li>
                             
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="center pad-h-16">
-                <p>© 2026 Lance Sebastian. All rights reserved.</p>
+
+            <div class="footer__page-info">
+                <p>© <span id="year"></span> Lance Sebastian. All rights reserved.</p>
                 <pre>This page was last updated: <span id = "date"></span></pre>
             </div>
+
         </footer>
 
+        <script src="./src/scripts/dateManager.js"></script>
         <script src="/src/scripts/faq__populator.js"></script>
         <script src="/src/scripts/faq__tab-filter.js"></script>
 
