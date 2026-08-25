@@ -20,6 +20,13 @@
     font-weight: bold;
 }
 
+.cta-buttons *.secondary, .cta-button.secondary, .cta-buttons.secondary *{
+    background: none;
+    color: var(--primary);
+    border: var(--primary) solid 2px;
+    font-weight: bold;
+}
+
 .cta-button{
     width: auto;
     padding-left: var(--space-lg);
