@@ -1,6 +1,7 @@
 .about{
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     padding: var(--space-md);
     gap: var(--space-lg);
 }
