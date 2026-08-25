@@ -10,17 +10,44 @@
 }
 
 .process__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap:var(--space-md);
     padding: 0;
-    margin: 0;
 }
 
 .process__list-item{
-    --stepNumber: 1;
+    --stepNumber: "1";
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: var(--bg-dark);
+    padding: var(--space-md);
+    border-radius: var(--space-md);
+    gap: var(--space-sm);
 
     &::before{
         content: var(--stepNumber);
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: var(--space-xl);
+        width: var(--space-xl);
+        padding: var(--space-lg);
+
+        border-radius: 100%;
+        
+        font-size: var(--space-lg);
+        font-weight: bold;
+        background: var(--primary);
+        color: var(--bg-light);
+        
+    }
+
+    & *{
+        color: var(--text);
     }
 }
