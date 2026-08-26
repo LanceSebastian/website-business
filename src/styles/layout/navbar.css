@@ -113,11 +113,21 @@
     font-size: var(--space-lg);
     width: 48px;
     height: 48px;
-    border: black solid 2px;
-    border-radius: var(--space-md);
     
     & * {
         color: var(--bg-light);
+    }
+
+    #mobile-menu~& i:last-child{
+        display:none;
+    }
+
+    #mobile-menu:checked~& i:first-child{
+        display:none;
+    }
+
+    #mobile-menu:checked~& i:last-child{
+        display:block;
     }
 }
 
