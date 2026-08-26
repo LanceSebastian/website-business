@@ -38,7 +38,7 @@ ul, ol {
 
 /* 8. Make sure root elements fill the viewport height reliably */
 html, body {
-  min-height: 100%;
+  min-height: 100svh;
 }
 
 a {
