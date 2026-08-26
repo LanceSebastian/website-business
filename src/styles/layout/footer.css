@@ -60,12 +60,7 @@ footer{
 }
 
 .footer__quick-links a {
-    position: relative;
-    &::before{
-        content: "";
-        position: absolute;
-        inset: -5px;
-    }
+
 }
 
 .footer__contact-info-list{
@@ -77,12 +72,7 @@ footer{
 }
 
 .footer__contact-detail{
-    position: relative;
-    &::after{
-        content: "";
-        position: absolute;
-        inset: -5px;
-    }
+    
 }
 
 .footer__page-info{
