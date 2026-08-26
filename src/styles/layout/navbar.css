@@ -74,7 +74,7 @@
     transform: rotate(-180deg);
 }
 
-.darkmode-toggle{
+.nav__darkmode-toggle{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,19 +87,19 @@
     font-size: var(--space-lg);
 }
 
-.darkmode-toggle i:last-child{
+.nav__darkmode-toggle i:last-child{
     display:none;
 }
 
-.dark .darkmode-toggle i:first-child {
+.dark .nav__darkmode-toggle i:first-child {
     display:none;
 }
 
-.dark .darkmode-toggle i:last-child {
+.dark .nav__darkmode-toggle i:last-child {
     display: block;
 }
 
-.burger-button{
+.nav__burger-button{
     display: flex;
     justify-content: center;
     align-items: center;
