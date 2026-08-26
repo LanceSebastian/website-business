@@ -51,4 +51,5 @@ p a {
 
 body{
   background: var(--bg);
+  transition: all 0.4s ease;
 }
