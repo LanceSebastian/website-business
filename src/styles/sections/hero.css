@@ -10,11 +10,17 @@
 
 .hero {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 95vh;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 0px;
+    min-height: calc(100vh - 6rem); /*6rem is the height of nav*/
     padding: var(--space-md);
+    padding-top: 80px;
+
+    @media(min-width: 600px){
+        align-items: center;
+    }
 }
 
 .hero.secondary{
@@ -30,6 +36,13 @@
     font-size: clamp(var(--space-md), 2vw, var(--space-lg));
     text-align: center;
     line-height: 1;
+    padding: 0;
+
+    @media(min-width:600px){
+        flex: 1;
+        text-align: start;
+        padding: 0 160px;
+    }
 }
 
 .hero__title-eyebrow{
@@ -61,11 +74,24 @@
     justify-content: center;
     margin-top: var(--space-sm);
     gap: var(--space-xl);
+    max-width: 800px;
+    @media (min-width:600px) {
+        justify-content: start;
+        & *{
+            max-width: 200px;
+        }
+    }
 }
 
 /* Hero Content */
 .hero__display {
-
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-lg);
+    gap: var(--space-sm);
+    @media(min-width:600px){
+        flex: 1;
+    }
 }
 
 .hero__display-image{
@@ -77,5 +103,7 @@
 }
 
 .hero__scroll-indicator{
+    position: absolute;
+    bottom: 0;
     text-align: center;
 }
