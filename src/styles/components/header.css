@@ -21,7 +21,3 @@
     text-transform: capitalize;
     line-height: 0.9;
 }
-
-.header__text{
-    color: var(--text-muted);
-}
