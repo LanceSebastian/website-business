@@ -5,8 +5,6 @@
 
 - Add proper header hierarchy.
 
-- Dark Mode
-
 - Desktop Version 
 
 - Prune dead classes
@@ -16,3 +14,4 @@
 Future Notes:
 .mobile-only.nav__link-dropdown-button i
     - Device compatibility isn't smooth. Ugly squishing around 900px.
+    - hover effects
