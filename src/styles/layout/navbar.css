@@ -42,6 +42,10 @@
 
     gap: var(--space-lg);
     transition: all 0.2s;
+
+    .dark & {
+        box-shadow: none;
+    }
 }
 
 .nav__links a, .nav__links label{
