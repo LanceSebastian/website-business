@@ -6,6 +6,9 @@
     min-height: var(--space-2xl);
     background-color: var(--primary);
     padding: var(--space-md);
+
+    position: sticky;
+    top:0;
 }
 
 .nav__header{
