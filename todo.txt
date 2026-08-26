@@ -5,11 +5,6 @@
 
 - Add proper header hierarchy.
 
-- NavBar.
-    - Bug in Mobile: Some text (especially in the footer) 
-    get rendered on top of the nav popup.
-    - Fix spacing
-
 - Dark Mode
 
 - Desktop Version 
@@ -17,3 +12,7 @@
 - Prune dead classes
 
 - Final Checks.
+
+Future Notes:
+.mobile-only.nav__link-dropdown-button i
+    - Device compatibility isn't smooth. Ugly squishing around 900px.
