@@ -48,3 +48,7 @@ a {
 p a {
   text-decoration: underline;
 }
+
+body{
+  background: var(--bg);
+}
