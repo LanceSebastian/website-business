@@ -1,11 +1,23 @@
 .our-offer{
     display: flex;
-    flex-direction: column-reverse ;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+
     padding: var(--space-md);
+
+    @media(min-width:600px){
+        padding: var(--space-3xl) var(--space-5xl);
+    }
 }
 
 .our-offer__content{
-
+    max-width: 600px;
+    @media(min-width:600px){
+        flex:1;
+    }
 }
 
 .our-offer__header{
@@ -13,6 +25,8 @@
 }
 
 .our-offer__features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     padding:0;
     margin:0;
 }
@@ -23,10 +37,21 @@
     margin-top: var(--space-md);
 }
 
+.our-offer__display{
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin:0;
+    @media(min-width:600px){
+        flex:1;
+    }
+}
+
 .our-offer__image{
     aspect-ratio: 4/3;
     max-width: 350px;
     object-fit: cover;
     border-radius: 32px;
+    box-shadow: var(--bg-dark) calc(var(--space-4xl) * -1) calc(var(--space-xl) * -1);
 }
 
