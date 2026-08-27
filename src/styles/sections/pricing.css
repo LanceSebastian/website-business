@@ -3,17 +3,25 @@
     flex-direction: column;
     padding: var(--space-md);
     gap: var(--space-lg);
+
+    @media (min-width: 600px){
+        padding: var(--space-md) var(--space-5xl);
+    }
 }
 .pricing__packages{
     display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-lg);
 }
 .pricing__packages-item{
     display: flex;
     flex-direction: column;
-    aspect-ratio: 4/3;
-    min-height: 400px;
+    gap: var(--space-md);
+    min-width: 300px;
+    width: 100%;
+    max-width: 360px;
     padding: var(--space-lg);
     background-color: var(--bg-dark);
     border-radius: var(--space-md);
@@ -29,11 +37,12 @@
 
 .pricing__packages-item-name{
     font-size: var(--space-xl);
-    margin-bottom: var(--space-md);
 }
+
 .pricing__packages-item-content{
     padding: 0;
 }
+
 .pricing__packages-item-content > li {
     display: flex;
     justify-content: space-between;
@@ -49,27 +58,40 @@
     }
     
 }
+
 .pricing__packages-item-footer{
     margin-top: auto;
     display: flex;
-    flex-direction: column;
-}
-.pricing__packages-item-price{
-    font-size:var(--space-lg);
+    flex-direction: row;
 }
 
-.pricing__packages-item-price span{
-    font-size: var(--space-md);
+.pricing__packages-item-price{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size:var(--space-md);
+
+    & span {
+        font-size:calc(var(--space-2xl) - var(--space-md)) !important; /*it's just 3rem*/
+        font-weight: bold;
+        padding: 0;
+        margin: 0;
+        line-height: var(--space-xl);
+    }
 }
 
 .pricing__packages-item-button {
     margin-left: auto;
+    .pricing__packages-item[data-package="recommended"] &{
+        border: white solid;
+    }
 } 
 
 .pricing__addon{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
@@ -81,7 +103,7 @@
 .pricing__addon-list{
     margin:0;
     padding:0;
-    width: 100
+    max-width: 600px;
 }
 
 .pricing__addon-list > li {
