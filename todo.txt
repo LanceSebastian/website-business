@@ -1,11 +1,7 @@
 - About Us Page
     - Rewrite about us description
-- Pricing cards still need perfecting.
-    - Especially with the about me buttons
 
 - Add proper header hierarchy.
-
-- Desktop Version 
 
 - Prune dead classes
 
@@ -21,3 +17,12 @@ Pricing:
         - Change ECommerce to something simpler e.g. Online Brochure.
         - Change Lump Sum to have full ownership of the code but no hosting.
     - Get a better addon list. Move it somewhere more convenient.
+    - Center Header
+
+Add Animations for elements
+
+add logo
+
+Update heros for better visuals
+
+add dynamic animation for nav with scrolling
