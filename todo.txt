@@ -15,3 +15,8 @@ Future Notes:
 .mobile-only.nav__link-dropdown-button i
     - Device compatibility isn't smooth. Ugly squishing around 900px.
     - hover effects
+
+Pricing:
+    - Update packages:
+        - Change ECommerce to something simpler e.g. Online Brochure.
+        - Change Lump Sum to have full ownership of the code but no hosting.
