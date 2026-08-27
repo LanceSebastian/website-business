@@ -1,17 +1,36 @@
 .about{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
     align-items: center;
     padding: var(--space-md);
     gap: var(--space-lg);
 }
 
+/* Tried to use grid to match the elements with height of the pic, but it failed. */
+.about__content{
+    max-width: 500px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "content"
+    "buttons";
+}
+
 .about__header{
+    grid-area: header;
 
 }
 
-.about__content{
+.about__description{
+    grid-area: content;
 
+    /* Prose pattern */
+    & > * + * { 
+        margin-block-start: var(--prose-flow, 1em);
+    }
 }
 
 .about__image{
@@ -22,6 +41,7 @@
 }
 
 .about__buttons{
+    grid-area: buttons;
     display: flex;
     gap: var(--space-md);
 }
