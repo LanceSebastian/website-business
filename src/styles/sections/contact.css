@@ -1,14 +1,28 @@
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: var(--space-md);
     gap: var(--space-lg);
+
+    @media (min-width: 600px) {
+        justify-content: space-evenly;
+        padding: var(--space-md) var(--space-5xl);
+    }
 }
 
 .contact__content{
     display: flex;
     flex-direction: column;
     gap: var(--space-md);
+    max-width: 550px;
+}
+
+.contact__info-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: var(--space-md)
 }
 
 .contact__info{
@@ -16,17 +30,6 @@
     align-items: center;
     gap: var(--space-md);
     text-decoration:none;
-}
-
-.contact__info-icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1;
-    font-size: var(--space-lg);
-    border: var(--text) solid 2px;
-    border-radius: 100%;
-    padding: var(--space-sm);
 }
 
 .contact__info-text p{
@@ -45,7 +48,13 @@
     display: flex;
     flex-direction: column;
     gap:var(--space-md);
+    width: 100%;
+    max-width: 500px;
     height: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    @media (min-width: 600px) {
+        padding: var(--space-xl);
+    }
 }
 
 .contact__form-group{
@@ -76,4 +85,5 @@
     border-radius: var(--space-sm);
     height: var(--space-xl);
     cursor: pointer;
+    max-width: var(--space-3xl);
 }
