@@ -20,3 +20,4 @@ Pricing:
     - Update packages:
         - Change ECommerce to something simpler e.g. Online Brochure.
         - Change Lump Sum to have full ownership of the code but no hosting.
+    - Get a better addon list. Move it somewhere more convenient.
