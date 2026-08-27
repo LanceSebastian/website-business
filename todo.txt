@@ -19,6 +19,9 @@ Pricing:
     - Get a better addon list. Move it somewhere more convenient.
     - Center Header
 
+FAQ:
+    - add cursor: pointer to faq items.
+
 Add Animations for elements
 
 add logo
