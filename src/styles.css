@@ -16,6 +16,7 @@
 
 @import "./styles/layout/footer.css";
 @import "./styles/layout/navbar.css";
+@import "./styles/layout/grid.css";
 
 @import "./styles/sections/hero.css";
 @import "./styles/sections/wid.css";
