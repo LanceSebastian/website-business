@@ -5,6 +5,11 @@
     padding: var(--space-md);
 }
 
+.testimonials__header{
+    display: flex;
+    align-items: center;
+}
+
 .testimonials__item{
     display: flex;
     flex-direction: column;
