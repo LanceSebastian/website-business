@@ -1,8 +1,6 @@
 - About Us Page
     - Rewrite about us description
 
-- Add proper header hierarchy.
-
 - Prune dead classes
 
 - Final Checks.
