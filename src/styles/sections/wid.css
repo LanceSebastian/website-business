@@ -1,6 +1,8 @@
 .wid{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: var(--space-md);
 
     @media(min-width:600px){
@@ -21,8 +23,8 @@
     flex-direction: column;
     gap: var(--space-md);
 
-    background: var(--bg-light);
-    border: var(--text) solid 2px;
+    background: var(--bg-dark);
+    border: var(--bg-light) solid 2px;
     border-radius: var(--space-md);
     padding: var(--space-lg);
 }
@@ -38,7 +40,17 @@
 }
 
 .wid__services-container{
+    /* outline: red solid; */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+    grid-template-columns: repeat(1, 1fr);
     gap: var(--space-lg);
+    min-width: 600px;
+    @media (min-width: 1000px){
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+    }
+
+    @media (min-width: 650px) and (max-width: 1000px){
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+
 }
