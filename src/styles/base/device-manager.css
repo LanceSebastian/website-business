@@ -1,18 +1,36 @@
 .mobile-only{
     display: block;
 
-    @media (min-width: 600px){
+    @media (min-width: 650px){
         display: none;
     }
 }
 
-.desktop-only{
+.not-mobile{
     display: none;
 
-    @media (min-width: 600px){
+    @media (min-width: 650px){
         display: block;
     }
 }
+
+.tablet-only{
+    display: block;
+
+    @media (min-width: 850px){
+        display: none;
+    }
+}
+
+.not-tablet{
+    display: none;
+
+    @media (min-width: 850px){
+        display: block;
+    }
+}
+
+
 
 /* @media only screen and (min-width: 600px) {
     .mobile-only{

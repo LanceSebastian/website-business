@@ -3,7 +3,7 @@ footer{
     flex-direction: column;
     padding: var(--space-md);
     background-color: var(--bg-dark);
-    @media (min-width:600px) {
+    @media (min-width:1000px) {
         padding: var(--space-md) var(--space-5xl);
     }
 }
@@ -23,7 +23,8 @@ footer{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    padding-top: var(--space-lg);
 }
 
 .footer__social-links{

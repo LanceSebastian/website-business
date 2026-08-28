@@ -55,7 +55,7 @@
     line-height: 1;
     padding: 0;
 
-    @media(min-width:600px){
+    @media(min-width:650px){
         flex: 1;
         text-align: start;
     }

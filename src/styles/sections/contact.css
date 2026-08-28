@@ -8,7 +8,6 @@
 
     @media (min-width: 600px) {
         justify-content: space-evenly;
-        padding: var(--space-md) var(--space-5xl);
     }
 }
 

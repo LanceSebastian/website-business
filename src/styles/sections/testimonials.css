@@ -1,12 +1,8 @@
 .testimonials{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: var(--space-md);
-
-    @media (min-width:600px) {
-        align-items: center;
-        padding: var(--space-lg) var(--space-5xl);
-    }
 }
 
 .testimonials__item{
@@ -55,7 +51,7 @@
     justify-content: center;
     gap: var(--space-md);
 
-    @media (min-width:600px) {
+    @media (min-width:650px) {
         padding: 0 var(--space-xl);
         gap: var(--space-xl);
     }

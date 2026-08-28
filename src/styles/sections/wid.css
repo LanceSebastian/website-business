@@ -5,7 +5,7 @@
     align-items: center;
     padding: var(--space-md);
 
-    @media(min-width:600px){
+    @media(min-width:650px){
         padding: 0 var(--space-5xl);
     }
 }
@@ -40,11 +40,12 @@
 }
 
 .wid__services-container{
-    /* outline: red solid; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
     gap: var(--space-lg);
-    min-width: 600px;
+    max-width: 400px;
+
     @media (min-width: 1000px){
         grid-template-columns: repeat(3, minmax(300px, 1fr));
     }
