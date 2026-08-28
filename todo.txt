@@ -9,7 +9,6 @@
 
 Future Notes:
 .mobile-only.nav__link-dropdown-button i
-    - Device compatibility isn't smooth. Ugly squishing around 900px.
     - hover effects
 
 Pricing:
@@ -17,10 +16,6 @@ Pricing:
         - Change ECommerce to something simpler e.g. Online Brochure.
         - Change Lump Sum to have full ownership of the code but no hosting.
     - Get a better addon list. Move it somewhere more convenient.
-    - Center Header
-
-FAQ:
-    - add cursor: pointer to faq items.
 
 Add Animations for elements
 
