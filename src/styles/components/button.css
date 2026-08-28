@@ -12,6 +12,7 @@
     border-radius: 50px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .cta-buttons *.invisible, .cta-button.invisible, .cta-buttons.invisible *{
@@ -43,6 +44,7 @@
     border: var(--primary) solid 2px;
     font-size: var(--space-lg);
     text-align: center;
+    cursor: pointer;
 }
 
 .faq-buttons *.active{
