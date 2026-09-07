@@ -47,7 +47,7 @@
 .faq__answer{
     max-height: 0;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .faq__query.active {

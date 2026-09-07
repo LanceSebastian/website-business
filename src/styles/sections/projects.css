@@ -58,6 +58,11 @@
     @media (min-width: 600px) {
         max-width: 500px;
         padding: var(--space-lg);
+        transition: all 0.2s ease;
+
+        &:hover .projects__thumbnail{
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -69,6 +74,7 @@
 .projects__thumbnail{
     grid-area: image;
     padding: var(--space-lg);
+    transition: all 0.4s ease;
 }
 
 .projects__item-content{

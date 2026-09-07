@@ -89,12 +89,21 @@
 .pricing__packages-item-button {
     margin-left: auto;
     .pricing__packages-item[data-package="recommended"] &{
-        border: white solid;
+        border: var(--bg-dark) solid 4px;
+        @media (min-width: 600px) {
+            transition: all 0.2s ease;
+            &:hover{
+                background: var(--bg-light);
+                color: var(--primary);
+                border: var(--bg-dark) solid 4px;
+            }
+        }
     }
 } 
 
 .pricing__addon{
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -104,6 +113,7 @@
 
 .pricing__addon summary {
     text-align: center;
+    cursor: pointer;
 }
 
 .pricing__addon-list{

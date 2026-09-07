@@ -59,4 +59,18 @@
     & *{
         color: var(--text);
     }
+
+    @media (min-width: 650px){
+        transition: all 0.2s ease;
+        cursor: default;
+        min-height: 250px;
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 12px 12px 20px -12px var(--text);
+            h3{
+                color: var(--primary);
+            }
+        }
+    }
 }

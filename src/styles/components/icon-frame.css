@@ -7,4 +7,14 @@
     border: var(--text) solid 2px;
     border-radius: 100%;
     padding: var(--space-sm);
+    @media (min-width: 600px) {
+        transition: all 0.2s ease;
+        :hover > &{
+            background: var(--primary);
+            border: var(--primary) solid 2px;
+            & *{
+                color: var(--bg-light);
+            }
+        }
+    }
 }
