@@ -59,7 +59,7 @@
             border: var(--primary) solid 4px;
 
             *{
-                color: var(--bg-light);
+                color: var(--bg-light) !important;
             }
         }
     }
