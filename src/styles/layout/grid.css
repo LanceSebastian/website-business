@@ -12,7 +12,9 @@
     }
 
     & main{
+        padding-top: var(--space-5xl);
         grid-area: content;
+        padding-bottom: var(--space-5xl);
     }
     
     & footer{
