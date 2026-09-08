@@ -5,11 +5,10 @@ Pricing:
     - Get a better addon list. Move it somewhere more convenient.
 
 Nav:
-    - Add dynamic animation
-    - Shrink text
+    - Add better dark mode highlights
+    - Add hover effects for darkmode button and burger button
 
 Hero:
-    - Remove text on phone
     - Check scale through for hero
 
 - Create/add logo
