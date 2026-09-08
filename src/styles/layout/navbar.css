@@ -1,21 +1,50 @@
+.nav-container {
+    &::before{
+        content: "";
+        position: fixed;
+        z-index: 1;
+        background-color: var(--bg-light);
+        width: 100%;
+        height: var(--space-3xl);
+        border-radius: var(--space-md);
+        transition: all 0.2s;
+    }
+    position: fixed;
+    top: var(--space-md);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+
+    min-height: var(--space-2xl);
+    border-radius: var(--space-md);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s;
+
+    &.scroll {
+        top: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    min-height: var(--space-2xl);
-    background-color: var(--primary);
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 
-    position: sticky;
-    top:0;
+    padding-left: var(--space-md);
+    padding-right: var(--space-md); 
+
+    @media (min-width: 800px){
+        padding-left: var(--space-2xl);
+        padding-right: var(--space-2xl);
+    }
 }
 
 .nav__header{
+    z-index: 1000;
     text-decoration: none;
-    color: var(--bg-light);
+    color: var(--text);
     font-size: var(--space-xl);
 }
 
@@ -29,24 +58,38 @@
 
 .nav__links{
     position: fixed;
-    top: 50%;
-    right: -60%;
-    transform: translate(5%, -50%);
-    background-color: var(--primary);
+    z-index: -1;
+    top: var(--space-2xl);
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    
+    width: 80%;
+    height: 0px;
+    visibility: hidden;
+    
+    background-color: var(--bg);
+    border-radius: var(--space-md);
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: var(--space-xl);
-    border-radius: var(--space-lg) 0 0 var(--space-lg);
-    box-shadow: 0 0.25rem 10px 0;
+    
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
 
     gap: var(--space-lg);
     transition: all 0.2s;
 
     #mobile-menu:checked~&{
-        right:0;
+        padding: var(--space-xl);
+        padding-top: var(--space-2xl);
+        height: 350px;
+        visibility: visible;
+    }
+
+    #mobile-menu:checked~#about-dropdown:checked~&{
+        height: 450px;
     }
 
     .dark & {
@@ -54,11 +97,14 @@
     }
 
     @media (min-width: 800px){
+        z-index: 1;
         position:static;
         flex-direction: row;
+        visibility: visible;
         transform: none;
         box-shadow: none;
         background: none;
+        width: auto;
         height: 100%;
         gap: var(--space-md);
         padding:0;
@@ -67,14 +113,14 @@
 }
 
 .nav__links a, .nav__links label{
-    font-size:var(--space-lg);
+    font-size: var(--space-md);
+    font-weight: 300;
     text-decoration: none;
-    color: var(--bg-light);
 }
 
 /* Need to change this, the device compatibility isn't smooth */
 .tablet-only.nav__link-dropdown-button i {
-    color: var(--bg-light);
+    color: var(--text);
     transition: transform 0.2s;
     
     #about-dropdown:checked~ul.nav__links &{
@@ -83,22 +129,23 @@
 }
 
 .not-tablet.nav__link-dropdown-button {
-    color: var(--bg-light);
-    transition: all 0.2s ease;
+    color: var(--text);
     position: relative;
 
     & i {
-        color: var(--bg-light);
+        color: var(--text);
     }
 }
 
 .nav__link-dropdown{
+    
     display: flex;
     height: 0px;
     overflow:hidden;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    gap: 10px;
     padding:0;
     transition: all 0.2s;
 
@@ -110,7 +157,7 @@
         position: absolute;
         top: 100%;
         align-items: start;
-        background: var(--primary);
+        background: var(--bg);
         opacity: 0;
         visibility: hidden;
         padding: var(--space-sm);
@@ -138,6 +185,7 @@
 }
 
 .nav__darkmode-toggle{
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +199,7 @@
     font-size: var(--space-lg);
     
     & * {
-        color: var(--bg-light);
+        color: var(--text);
     }
 
     & i:last-child{
@@ -169,6 +217,7 @@
 
 
 .nav__burger-button{
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +228,7 @@
     height: 48px;
     
     & * {
-        color: var(--bg-light);
+        color: var(--text);
     }
 
     #mobile-menu~& i:last-child{

@@ -21,9 +21,9 @@
     flex-wrap:wrap;
     justify-content: center;
     gap: 0px;
-    min-height: calc(100vh - 6rem); /*6rem is the height of nav*/
+    min-height: 100vh;
     padding: var(--space-md);
-    padding-top: 80px;
+    padding-top: var(--space-5xl);
 
     @media(min-width: 600px){
         align-items: center;

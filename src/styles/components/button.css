@@ -38,19 +38,28 @@
     }
 }
 
-.cta-buttons *.secondary, .cta-button.secondary, .cta-buttons.secondary *{
-    background: none;
-    color: var(--primary);
-    border: var(--bg-light) solid 2px;
-    font-weight: bold;
+.nav-button {
+    padding: var(--space-md);
+    border-radius: 50px;
+    border: var(--primary) solid 4px;
+    text-align: center;
+    cursor: pointer;
+    border: var(--primary) solid 4px;
+
+    & * {
+        font-weight: bold !important;
+        letter-spacing: 0.1rem;
+        color: var(--primary);
+    }
+
     @media (min-width: 600px) {
         transition: all 0.2s ease;
         &:hover {
-            background: var(--bg-dark);
-            border: var(--primary) solid 2px;
+            background: var(--primary);
+            border: var(--primary) solid 4px;
 
             *{
-                color: var(--primary);
+                color: var(--bg-light);
             }
         }
     }
