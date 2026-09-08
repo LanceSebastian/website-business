@@ -190,10 +190,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: none;
 
     width: 48px;
     height: 48px;
-    border-radius: var(--space-md);
     background: none;
 
     font-size: var(--space-lg);
@@ -212,6 +212,7 @@
     
     .dark & i:last-child {
         display: block;
+        color: gold
     }
 }
 
@@ -223,12 +224,21 @@
     align-items: center;
     cursor: pointer;
 
+    background: var(--primary);
+    border-radius: var(--space-md);
+
     font-size: var(--space-lg);
-    width: 48px;
-    height: 48px;
+    width: 60px;
+    height: 60px;
+
+    transition: all 0.2s;
     
     & * {
-        color: var(--text);
+        color: var(--bg-light);
+    }
+
+    #mobile-menu:checked~&{
+        transform: rotate(90deg);
     }
 
     #mobile-menu~& i:last-child{
