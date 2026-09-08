@@ -107,15 +107,37 @@
         width: auto;
         height: 100%;
         gap: var(--space-md);
-        padding:0;
-        margin:0;
     }
 }
 
 .nav__links a, .nav__links label{
+    position: relative;
     font-size: var(--space-md);
     font-weight: 300;
     text-decoration: none;
+
+    &::before{
+        bottom: -2px;
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0%;
+        transition: all 0.2s;
+    }
+
+    @media (min-width: 800px){
+        transition: all 0.2s;
+        &:hover{
+            color: var(--primary);
+            &::before{
+                content: "";
+                height: 2px;
+                width: 100%;
+                background-color: var(--primary);
+                display: block;
+            }
+        }
+    }
 }
 
 /* Need to change this, the device compatibility isn't smooth */
