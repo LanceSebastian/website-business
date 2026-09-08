@@ -1,4 +1,5 @@
+// Trigger when the user scrolls
 window.addEventListener("scroll", () => {
-  document.querySelector(".navBarContainer")
-    .classList.toggle("solid", window.scrollY > 100);
+  document.querySelector(".nav-container")
+    .classList.toggle("scroll", window.scrollY >= 1);
 });
