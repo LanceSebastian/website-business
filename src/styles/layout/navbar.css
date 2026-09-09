@@ -116,6 +116,14 @@
     font-weight: 300;
     text-decoration: none;
 
+    .nav__link-active &::before{
+        bottom: -2px;
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 100%;
+    }
+
     &::before{
         bottom: -2px;
         position: absolute;
