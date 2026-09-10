@@ -116,15 +116,6 @@
     font-weight: 300;
     text-decoration: none;
 
-    .nav__link-active>&::before{
-        bottom: -2px;
-        position: absolute;
-        content: "";
-        height: 2px;
-        width: 100%;
-        background-color: var(--primary);
-    }
-
     &::before{
         bottom: -2px;
         position: absolute;
@@ -133,6 +124,12 @@
         width: 0%;
         transition: all 0.2s;
     }
+    
+    .nav__link-active>&::before{
+        content: "";
+        width: 100%;
+        background-color: var(--primary);
+    }
 
     @media (min-width: 800px){
         transition: all 0.2s;
@@ -140,7 +137,6 @@
             color: var(--primary);
             &::before{
                 content: "";
-                height: 2px;
                 width: 100%;
                 background-color: var(--primary);
                 display: block;
