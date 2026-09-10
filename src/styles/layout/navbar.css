@@ -136,7 +136,7 @@
 
     @media (min-width: 800px){
         transition: all 0.2s;
-        &:hover{
+        li:not(.nav-button) > &:hover{ /* Exclude the "Get Started" button */
             color: var(--primary);
             &::before{
                 content: "";
