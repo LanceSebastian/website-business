@@ -9,7 +9,11 @@
         border-radius: var(--space-md);
         transition: all 0.2s;
     }
-    z-index: 1;
+
+    &.scroll::before{
+        border-radius: 0;
+    }
+    z-index: 10;
     position: fixed;
     top: var(--space-md);
     left: 50%;
@@ -18,13 +22,13 @@
 
     min-height: var(--space-2xl);
     border-radius: var(--space-md);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: color-mix(in srgb, var(--text) 20%, transparent) 0px 8px 24px;;
     transition: all 0.2s;
 
     &.scroll {
         top: 0;
         width: 100%;
-        border-radius: 0;
+        border-radius: 0px;
     }
 }
 

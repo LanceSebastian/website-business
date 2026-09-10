@@ -16,6 +16,8 @@
 }
 
 .hero {
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -25,7 +27,11 @@
     min-height: 100vh;
     padding: var(--space-md);
     padding-top: var(--space-3xl);
-    background-color: var;
+    background-color: var(--secondary);
+
+    .dark & {
+        background-color: var(--bg-light);
+    }
 
     @media(min-width: 800px){
         align-items: start;
@@ -52,6 +58,7 @@
 
 /* Hero Header */
 .hero__title {
+    z-index: 1;
     position: relative;
     width: 100%; /* title-animation grows smaller containers, */
     max-width: 1600px;
@@ -127,11 +134,22 @@
     @media(min-width:800px){
         min-width: 600px;
         width: 60vw;
-        z-index: -1;
+        z-index: 1;
         position: absolute;
         right: 0;
         top: 50%;
         transform:translateY(-35%);
+    }
+}
+
+.hero__svg{
+    bottom:0;
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    fill: var(--bg);
+    @media (min-width:600px) {
+        transform: translateY(40%);
     }
 }
 
