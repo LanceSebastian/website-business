@@ -61,3 +61,37 @@
         gap: var(--space-xl);
     }
 }
+
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-2xl);
+    align-items: center;
+    justify-content: center;
+    @media (min-width: 800px) {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+.testimonial__author{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.testimonial__name{
+    font-size: var(--space-xl);
+    line-height: var(--space-md);
+    @media (min-width: 800px) {
+        line-height: var(--space-xl);
+    }
+}
+.testimonial__business{
+    color: var(--text-muted);
+}
+.testimonial__stars *{
+    color: gold;
+    @media (min-width: 800px) {
+        font-size: var(--space-lg);
+    }
+}
