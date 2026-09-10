@@ -1,16 +1,15 @@
 Pricing:
     - Get a better addon list. Move it somewhere more convenient.
 
-Nav:
-    - Add better dark mode highlights
-    - Add hover effects for darkmode button
-
 Hero:
     - Check scale through for hero
+    - Secondary pages too empty.
 
 - Create/add logo
 
 - Prune dead classes
+
+
 
 - Final Checks.
     - Responsive Design
@@ -18,3 +17,15 @@ Hero:
     - Each Page
     - Specifics:
         - Check Home Page: View Projects hover animation through Responsive Design.
+
+Future:
+- Improve Image Delivery:
+    - Project images only go to 404x227. The images are 1920x1080.
+    - Hero display only goes to 1121x646. The image is 1597x920.
+    - Our Offer image only goes to 380x500. The image is 892x1275.
+- Minify JavaScript
+- Font Display - FontAwesome is requesting entire packages that It's mostly not using.
+- Render Blocking Requests: Download Font from google
+    - There's a lot of references to lots of style files. Look into how to make that better.
+- Efficient Cache Lifetimes - Cache static images/files that don't often change.
+- Download all fonts used and reference them. + Performance
