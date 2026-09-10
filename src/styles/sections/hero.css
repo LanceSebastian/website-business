@@ -34,7 +34,7 @@
 .hero.secondary{
     display: flex;
     flex-direction: column;
-    min-height: calc(50vh - 6rem);
+    min-height: 50vh;
     padding: var(--space-md);
 
     @media(min-width: 600px){
