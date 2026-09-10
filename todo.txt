@@ -16,3 +16,7 @@ Hero:
 - Prune dead classes
 
 - Final Checks.
+    - Responsive Design
+    - Multiple Browsers
+    - Each Page
+    
