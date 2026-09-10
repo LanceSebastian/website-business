@@ -228,6 +228,7 @@
     background: none;
 
     font-size: var(--space-lg);
+    transition: all 0.3s ease;
     
     & * {
         transition: all 0.2s ease-in;
@@ -263,6 +264,13 @@
         offset-distance: 100%;
         opacity: 1;
         visibility: visible;
+    }
+
+    @media (min-width:600px) {
+        &:hover{
+            border-radius: 100px;
+            background-color: var(--bg-dark);
+        }
     }
 }
 
