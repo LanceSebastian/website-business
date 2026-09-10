@@ -116,7 +116,7 @@
     font-weight: 300;
     text-decoration: none;
 
-    .nav__link-active &::before{
+    .nav__link-active>&::before{
         bottom: -2px;
         position: absolute;
         content: "";
