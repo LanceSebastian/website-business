@@ -6,7 +6,7 @@ Pricing:
 
 Nav:
     - Add better dark mode highlights
-    - Add hover effects for darkmode button and burger button
+    - Add hover effects for darkmode button
 
 Hero:
     - Check scale through for hero
@@ -19,4 +19,5 @@ Hero:
     - Responsive Design
     - Multiple Browsers
     - Each Page
-    
+    - Specifics:
+        - Check Home Page: View Projects hover animation through Responsive Design.
