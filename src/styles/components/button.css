@@ -26,14 +26,30 @@
 }
 
 .cta-buttons *.invisible, .cta-button.invisible, .cta-buttons.invisible *{
+    &::before{
+        bottom: 16px;
+        position: absolute;
+        content: "";
+        height: 2px;
+        left: 25px;
+        width: 0%;
+        transition: all 0.2s;
+    }
+    position: relative;
     background: none;
     color: var(--primary);
     font-weight: bold;
     border: none;
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
         transition: all 0.2s ease;
+
         &:hover{
-            text-decoration: underline;
+            &::before{
+                content: "";
+                width: 80%;
+                background-color: var(--primary);
+                display: block;
+            }
         }
     }
 }
