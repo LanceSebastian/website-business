@@ -21,7 +21,9 @@
 }
 
 .our-offer__header{
-    
+    @media (min-width:600px){
+        width: 700px;
+    }
 }
 
 .our-offer__features{
