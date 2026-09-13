@@ -6,6 +6,10 @@
     align-items: center;
     padding: var(--space-3xl) var(--space-md);
     background: var(--secondary);
+
+    .dark & {
+        background: var(--bg-light);
+    }
 }
 
 .projects__page{
