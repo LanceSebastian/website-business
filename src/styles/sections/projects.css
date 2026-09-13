@@ -5,7 +5,7 @@
     justify-content: space-evenly;
     align-items: center;
     padding: var(--space-3xl) var(--space-md);
-    background: var(--bg-dark);
+    background: var(--secondary);
 }
 
 .projects__page{
