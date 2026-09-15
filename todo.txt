@@ -1,6 +1,7 @@
-- Fix Links in online environment.
-
-- Prune dead classes
+- Prune dead classes / files
+- Improve icon .ico file for higher visibility.
+- Improve 1080/720 aspect ratio
+- Add decor
 
 - Final Checks.
     - Responsive Design
