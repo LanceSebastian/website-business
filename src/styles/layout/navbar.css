@@ -62,7 +62,6 @@
 .nav__header-logo{
     opacity: 1;
     height: 80px;
-    padding-top: 10px;
     
     .dark &{
         filter: brightness(0) invert(1);
