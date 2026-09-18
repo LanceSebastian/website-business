@@ -29,6 +29,88 @@
         <script src="https://kit.fontawesome.com/2d792f3032.js" crossorigin="anonymous"></script>
         <script src="./src/scripts/darkmode.js" defer></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0K9QCFE1X"></script>
+        
+        <!-- Schema -->
+        <script type="application/ld+json">
+            {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://owlvisionwebdesign.com/#organization",
+                    "name": "Owl Vision Web Design",
+                    "url": "https://owlvisionwebdesign.com",
+                    "email": "lance@owlvisionwebdesign.com",
+                    "logo": "https://owlvisionwebdesign.com/owl-icon-512.png",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Burnham-on-Sea",
+                        "addressRegion": "Somerset",
+                        "addressCountry": "GB"
+                    },
+                    "founder": {
+                        "@type": "Person",
+                        "name": "Lance Sebastian"
+                    },
+                    "areaServed": {
+                        "@type" : "Place",
+                        "name" : "Worldwide"
+                    },
+                    "knowsAbout": ["Web Design & Development", "Website Maintenance", "Small Business Website"]
+                },
+                {
+                    "@type": "Service",
+                    "name": "Lump Sum",
+                    "provider": { "@id": "https://owlvisionwebdesign.com/#organization" },
+                    "areaServed": {
+                        "@type" : "Place",
+                        "name" : "Worldwide"
+                    },
+                    "description": "Pay upfront for a custom website of up to 5 pages with full ownership. Hosting and maintenance are not included.",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "400",
+                        "priceCurrency": "GBP"
+                    }
+                },
+                {
+                    "@type": "Service",
+                    "name": "Monthly",
+                    "provider": { "@id": "https://owlvisionwebdesign.com/#organization" },
+                    "areaServed": {
+                        "@type" : "Place",
+                        "name" : "Worldwide"
+                    },
+                    "description": "Pay monthly for a custom website that we maintain, update, and host. It includes a domain that you own. The contract lasts at least a year, giving the website time to grow.",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "50",
+                        "priceCurrency": "GBP",
+                        "priceSpecification": {
+                            "@type": "UnitPriceSpecification",
+                            "billingDuration": "P1M"
+                        }
+                        
+                    }
+                },
+                {
+                    "@type": "Service",
+                    "name": "Online Brochure",
+                    "provider": { "@id": "https://owlvisionwebdesign.com/#organization" },
+                    "areaServed": {
+                        "@type" : "Place",
+                        "name" : "Worldwide"
+                    },
+                    "description": "For a simpler, budget-friendly website, start out with a single page of up to 6 sections. Ownership is fully included.",
+                    "offers": {
+                        "@type": "Offer",
+                        "price": "100",
+                        "priceCurrency": "GBP"
+                    }
+                }
+            ]
+            }
+            </script>
     </head>
 
     <body>
