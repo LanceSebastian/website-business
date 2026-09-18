@@ -30,17 +30,17 @@ const faqPricing = [
     {
         question: "How long does the subscription last?",
         answer:
-        "Subscription websites have a 6-month minimum term. This allows me to cover build costs while keeping monthly pricing affordable."
+        "Subscription websites have a 12-month minimum term. This allows us to cover build costs while keeping monthly pricing affordable."
     },
     {
-        question: "What happens if I cancel before the 6 months are up?",
+        question: "What happens if I cancel before the 12 months are up?",
         answer:
-        "If you cancel before the 6 months, you will owe the remaining balance of the minimum term. Your website will still be up for the remainder of the term."
+        "If you cancel before the 12 months, you will owe the remaining balance of the minimum term. Your website will still be up for the remainder of the term."
     },
     {
-        question: "What happens if I cancel after the 6 months?",
+        question: "What happens if I cancel after the 12 months?",
         answer:
-        "I will take the website offline unless you return to our services."
+        "The website will stay online until the end of the month, after which it will be taken offline."
     },
     {
         question: "Can I rejoin later if I cancel?",
@@ -76,9 +76,9 @@ const faqPlans = [
         "A lump-sum website is paid for upfront and fully owned by you, with £10/month hosting. A subscription spreads the cost monthly and includes hosting, maintenance, and support, but ownership remains with us."
     },
     {
-        question: "After the 6-month minimum, do I keep paying?",
+        question: "After the 12-month minimum, do I keep paying?",
         answer:
-        "Yes. Subscriptions are ongoing and continue monthly after the 6-month minimum unless cancelled."
+        "Yes. Subscriptions are ongoing and continue monthly after the 12-month minimum unless cancelled."
     },
     {
         question: "Can I cancel after the subscription minimum has passed?",
