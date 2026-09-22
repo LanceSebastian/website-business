@@ -114,7 +114,7 @@
     @media (min-width:800px) {
         justify-content: start;
         & *{
-            max-width: 200px;
+            max-width: 10vw;
         }
     }
 }
@@ -135,7 +135,7 @@
     @media(min-width:800px){
         min-width: 600px;
         width: 60vw;
-        z-index: 1;
+        z-index: -1;
         position: absolute;
         right: 0;
         top: 50%;
