@@ -31,7 +31,7 @@
         position: absolute;
         content: "";
         height: 2px;
-        left: 25px;
+        left: 20px;
         width: 0%;
         transition: all 0.2s;
     }
