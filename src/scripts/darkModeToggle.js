@@ -1,12 +1,12 @@
 const darkModeToggle = document.getElementById("darkModeToggle");
 
 const enableDarkMode = () => {
-    document.body.classList.add("dark");
+    document.documentElement.classList.add("dark");
     localStorage.setItem("darkmode", "active");
 }
 
 const disableDarkMode = () => {
-    document.body.classList.remove("dark");
+    document.documentElement.classList.remove("dark");
     localStorage.setItem("darkmode", "inactive");
 }
 
