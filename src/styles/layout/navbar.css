@@ -57,27 +57,27 @@
     height: 96px;
     width: 220px;
     
-    & picture:first-child{
+    & img:first-child{
         display: block;
     }
 
-    & picture:last-child{
+    & img:last-child{
         display: none;
     }
 
-    .picture & img:first-child{
+    .dark & img:first-child{
         display: none;
     }
 
-    .picture & img:last-child{
+    .dark & img:last-child{
         display: block;
     }
 }
 
 .nav__header-logo{
-    max-width: 440px;
-    width: 100%;
+    max-width: 220px;
     object-fit: contain;
+    width: 100%;
 
     @media (min-width: 600px) {
         transition: all 0.2s ease;
