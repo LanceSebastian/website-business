@@ -54,6 +54,40 @@
     }
 }
 
+.rtp-buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-sm);
+    margin-bottom: var(--space-lg);
+
+    &>* {
+        &::before{
+            bottom: 16px;
+            position: absolute;
+            content: "";
+            height: 2px;
+            top: 25px;
+            left: 0px;
+            width: 0%;
+            transition: all 0.2s;
+        }
+
+        @media (min-width: 800px) {
+            position: relative;
+            transition: all 0.2s ease;
+
+            &:hover{
+                &::before{
+                    content: "";
+                    width: 100%;
+                    background-color: var(--primary);
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 .nav-button {
     padding: var(--space-md);
     border-radius: 50px;

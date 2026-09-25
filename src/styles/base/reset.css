@@ -41,6 +41,10 @@ html, body {
   min-height: 100svh;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
